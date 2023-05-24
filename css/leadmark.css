@@ -11741,3 +11741,6 @@ textarea.form-control {
   opacity: 1;
   visibility: visible;
 }
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.844);
+}

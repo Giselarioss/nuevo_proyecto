@@ -235,7 +235,7 @@
                                 <option value="lidiar">Lidiar con problemas laborales, jefes dificiles y crecer profesionalmente.</option>
                                 <option value="mejorar">Mejorar tus relaciones de pareja y familiares.​</option>
                                 <option value="pensar">Pensar en ti mismo y vivir mas plenamente.​</option>
-                                <option value="C++">Otros...</option>
+                                <option value="otros">Otros...</option>
                                 
                             </select>
                             <div class="form-group col-sm-4" style="padding-top: 15px;">
@@ -289,18 +289,35 @@
     <!-- Blog Section -->
     <section class="section" id="blog">
         <div class="container">
-            <h6 class="section-title mb-0 text-center">Blog</h6>
-            <h6 class="section-subtitle mb-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores deserunt consectetur ex vitae expedita aut. Excepturi veritatis vero aperiam recusandae laudantium obcaecati quasi animi assumenda est suscipit facere, debitis soluta.</h6>
+            <h6 class="section-title mb-0 text-center" style="padding-bottom: 30px;">Blog coach de vida</h6>
+            
             <div class="row">
                 <div class="col-md-4">
                     <div class="card border-0 mb-4">
                         <img src="imgs/blog-1.jpg" alt="" class="card-img-top w-100">
                         <div class="card-body">                         
-                            <h6 class="card-title">Pariatur Omnis Harum quae sint.</h6>
-                            <p>Fuga quae ratione inventore Perferendis porro.</p>
-                            <a href="javascript:void(0)" class="small text-muted">Ir al articulo</a>
+                            <h6 class="card-title">El dolor de migrar</h6>
+                            <p>Los desafíos emocionales de dejar nuestro hogar</p>
+                            <a href="javascript:void(0)" onclick="window.modal.showModal();" class="small text-muted">Ir al articulo</a>
                         </div>
                     </div>
+                    <dialog id="modal" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
+                        
+                        <h5 class="card-title">El Dolor de Migrar: los desafíos emocionales de dejar nuestro hogar</h5>
+                        <p>Migrar es un proceso complejo y desafiante que implica dejar atrás el lugar que llamamos hogar y enfrentar lo desconocido. Para muchos migrantes, esta transición puede tener un impacto duradero en su salud mental y emocional. Aunque las condiciones económicas y de seguridad mejoren, dejar lo que conocemos no es fácil. En estas son algunos de los desafíos emocionales que enfrentan aquellos que toman la valiente decisión de buscar una vida mejor en otro país.
+                        </p>
+                        <h6>Pérdida y Duelo:</h6>
+                        <p>La migración implica dejar atrás la familia, amigos, comunidad y cultura con los que hemos crecido. Esta pérdida puede generar un profundo sentimiento de duelo y nostalgia. Los migrantes experimentan la sensación de estar desconectados de su tierra natal y pueden enfrentar dificultades para adaptarse.</p>
+                        <h6>Barreras Lingüísticas y Culturales:</h6>
+                        <p>La barrera del idioma y las diferencias culturales pueden dificultar la integración de los migrantes en su nuevo entorno. La dificultad para comunicarse y comprender las normas y costumbres locales puede generar frustración y aislamiento, lo que contribuye al estrés y la ansiedad.</p>
+                        <h6>Separación Familiar:</h6>
+                        <p>En muchos casos, los migrantes deben dejar a sus seres queridos atrás, lo que resulta en una dolorosa separación familiar. La distancia y la incapacidad de estar presentes en momentos importantes de la vida de sus seres queridos pueden generar sentimientos de tristeza, culpa y angustia emocional.</p>
+                        <h6>Discriminación y Racismo:</h6>
+                        <p>Los migrantes a menudo se enfrentan a la discriminación y el racismo en sus nuevos hogares. Pueden ser objeto de estereotipos negativos, prejuicios y xenofobia. Esta discriminación puede socavar su autoestima y generar estrés, ansiedad y depresión.</p>
+                        <p>Migrar no es fácil, en cualquier condición y a cualquier edad. Los desafíos emocionales asociados con dejar el hogar y enfrentar lo desconocido pueden tener un impacto significativo en su salud mental y emocional. Es importante reconocer y abordar estos desafíos, brindando apoyo y recursos adecuados para ayudar a los migrantes a sanar y adaptarse a su nuevo entorno. En Vida Coaches estamos para ayudarte a reconectar, manejar la transición, adaptarte y seguir adelante.<a href="#contact" style="font-size: 1.1rem; color: orangered;font-weight: bolder;"> Escríbenos!</a></p>
+                        
+                        <a href="#blog" class="btn btn-primary btn-sm rounded"  onclick="window.modal.close();">x</a>
+                     </dialog>
                 </div>
                 <div class="col-md-4">
                     <div class="card border-0 mb-4">
@@ -378,8 +395,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Testmonial Section -->
-    
+    <!-- End of Testmonial Section -->    
     
 	<!-- Page Footer -->
     <footer class="mt-5 py-4 border-top border-secondary">
