@@ -161,6 +161,9 @@
           .nav-link {
             padding-right: $navbar-nav-link-padding-x;
             padding-left: $navbar-nav-link-padding-x;
+            &:hover{
+              transform: scale(1.1);
+            }
           }
         }
 
