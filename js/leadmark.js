@@ -30,7 +30,7 @@ $(window).on("load", function() {
         }
     }), $(".filters a").click(function() {
         $(".filters .active").removeClass("active"), $(this).addClass("active");
-        var i = $(this).attr("data-filter");
+        var i = $(this).attr("portfolio-item");
         return t.isotope({
             filter: i,
             animationOptions: {

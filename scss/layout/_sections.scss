@@ -110,6 +110,7 @@
         max-width: 400px;
         @include flex;
         justify-content: space-between;
+        
 
         a {
             flex-basis: 0;
@@ -164,30 +165,28 @@
                 justify-content: center;
                 padding: 0 15px;
                 color: $white;
-                opacity: 0;
-                visibility: hidden;
+                opacity: 0;                
                 @include custom-transition(all,.28);
+                left: 50%;
+                opacity: 1;
+                visibility: visible;
+                
 
                 .title {
-                    font-size: 22px;
+                    font-size: 1.5rem;
                     font-weight: 600;
+                    padding-bottom: 15px;
                 }
 
                 .subtitle {
+                    font-size: 1.2rem;
                     font-weight: 500;
                     opacity: 1;
                 }
 
             }
 
-            &:hover{
-
-                .content-holder {
-                    left: 50%;
-                    opacity: 1;
-                    visibility: visible;
-                }
-            }
+            
         }
     }
 }

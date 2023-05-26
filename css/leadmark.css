@@ -4136,7 +4136,7 @@ input[type=button].btn-block {
   border-radius: 10px;
 }
 .card_test:hover {
-  background-color: rgb(255, 166, 0);
+  background-color: rgba(255, 68, 0, 0.89);
   color: #fff;
 }
 .card_test img {
@@ -10449,23 +10449,22 @@ textarea.form-control {
   padding: 0 15px;
   color: #fff;
   opacity: 0;
-  visibility: hidden;
   -webkit-transition: all 0.28s;
   -o-transition: all 0.28s;
   transition: all 0.28s;
-}
-.portfolio-section .portfolio-container .portfolio-item .content-holder .title {
-  font-size: 22px;
-  font-weight: 600;
-}
-.portfolio-section .portfolio-container .portfolio-item .content-holder .subtitle {
-  font-weight: 500;
-  opacity: 1;
-}
-.portfolio-section .portfolio-container .portfolio-item:hover .content-holder {
   left: 50%;
   opacity: 1;
   visibility: visible;
+}
+.portfolio-section .portfolio-container .portfolio-item .content-holder .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.portfolio-section .portfolio-container .portfolio-item .content-holder .subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=leadmark.css.map */
