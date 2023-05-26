@@ -371,9 +371,9 @@
             </div>
             <div class="portfolio-container text-center">
                 <!--------------------------------Inicio de tarifas sin filtros ---------------------------->
-                <div class="col-md-6 col-lg-4 new" id="tarifa1">
+                <div class="col-md-6 col-lg-4 new" id="tarifa1" style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">
                     <div class="portfolio-item">
-                        <img src="imgs/web-1.jpg" class="img-fluid" alt="hombre corriendo por la playa">
+                        <img src="imgs/web-1.jpg" class="img-fluid" alt="hombre corriendo por la playa" >
                         <div class="content-holder" >
                             <a class="img-popup" href="imgs/web-1.png"></a>
                             <div class="text-holder">
@@ -385,8 +385,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 new" id="tafira2">
-                    <div class="portfolio-item">
+                <div class="col-md-6 col-lg-4 new" id="tafira2" style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">
+                    <div class="portfolio-item" >
                         <img src="imgs/web-11.jpg" class="img-fluid"
                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
                         <div class="content-holder">
@@ -401,7 +401,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 new" id="tafira3">
+                <div class="col-md-6 col-lg-4 new" id="tafira3" style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">
                     <div class="portfolio-item">
                         <img src="imgs/web-111.jpg" class="img-fluid"
                             alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
@@ -430,15 +430,17 @@
     <!-- Contact Section -->
     <section id="contact" class="section has-img-bg pb-0" style="min-height: 700px; padding-bottom: 50px; scroll-margin: 60px;" >
         <div class="container">
-            <div class="row align-items-center ">
+            <div class="row" style="justify-content: space-around">
+                <h4 class="mb-4 text-center" style="padding-bottom: 40px;">Empezemos ... Llena el formulario y nos ponemos en contacto.</h4>
 
                 <div class="col-md-7">
+                    
                     <form>
-                        <h4 class="mb-4">Empecemos</h4>
+                        
                         <div class="form-row">
-                            <label for="problemas">Donde necesitas apoyo:</label>
+                            <label for="problemas" style="font-size: 1.1rem;">Donde necesitas apoyo:</label>
                             <select name="problemas" id="problemas"
-                                style="font-size: 0.9rem; color: white; background-color: black"
+                                style="font-size: 1rem; color: white; background-color: black"
                                 class="form-control form-control-sm" required>
 
                                 <option value="adaptarse">Adarptarme a un nuevo, país, cultura, sociedad o ambiente.
@@ -454,33 +456,33 @@
                                 <option value="otros">Otros...</option>
 
                             </select>
-                            <div class="form-group col-sm-4" style="padding-top: 15px;">
+                            <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
                                 <input type="text" class="form-control text-white rounded-0 bg-transparent" name="name"
                                     placeholder="..." required> Nombre y apellido
                             </div>
-                            <div class="form-group col-sm-4" style="padding-top: 15px;">
+                            <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
                                 <input type="email" class="form-control text-white rounded-0 bg-transparent"
                                     name="email" placeholder="..." required>Correo electrónico
                             </div>
-                            <div class="form-group col-sm-4" style="padding-top: 15px;">
+                            <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;" >
                                 <input type="tel" class="form-control text-white rounded-0 bg-transparent"
                                     name="telefono" placeholder="...">Teléfono (Whastapp)
                             </div>
 
-                            <div class="form-group col-sm-4" style="padding-top: 15px;">
+                            <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
                                 <input type="text" class="form-control text-white rounded-0 bg-transparent" name="pais"
                                     placeholder="..." required>Ciudad y pais donde vives
                             </div>
 
                             <div class="form-group col-12" style="padding-top: 15px;">
                                 <textarea name="message" id="" cols="30" rows="4"
-                                    class="form-control text-white rounded-0 bg-transparent"
+                                    class="form-control text-white rounded-0 bg-transparent" style="font-size: 1.1rem;"
                                     placeholder="Si deseas darnos mas detalles sobre lo que te pasa, hazlo aqui:"></textarea>
 
                             </div>
                             <div class="form-group col-12 mb-0">
                                 <a href="mailto:contacto@vidacoaches.com" target="_blank">
-                                    <button type="submit" class="btn btn-primary rounded w-md mt-3">Enviar</button>
+                                    <button type="submit" class="btn btn-primary rounded w-md mt-3" style="font-size: 1.1rem;">Enviar</button>
                                 </a>
 
                             </div>
@@ -488,26 +490,30 @@
                     </form>
                 </div>
                 <div class="col-md-5 my-3 text-center">
-                    <h6 class="mb-0" style="color: orange;">Whastapp</h6>
+                    <h6 style="color: orange; font-size: 1.2rem; padding-bottom: 10px;">Escribinos a:
+                    </h6>
+                    <h6 class="mb-0" style="color: orange; font-size: 1rem;">Whastapp</h6>
                     <a href="https://api.whatsapp.com/send?phone=+540111535965203&text=Hola, Necesito mas informacion!">
-                        <p class="mb-4" style="color: white">+ 54 1135965203</p>
+                        <p class="mb-4" style="color: white; font-size: 1.1rem;">+ 54 1135965203</p>
                     </a>
 
-                    <h6 class="mb-0" style="color: orange;">Email</h6>
+                    <h6 class="mb-0" style="color: orange; font-size: 1rem;">Email</h6>
                     <a class="mb-4" href="mailto:contacto@vidacoaches.com" target="_blank"
-                        style="color: white; font-size: 0.8rem; padding-bottom: 20px;">contacto@vidacoaches.com</a>
+                        style="color: white; font-size: 1rem; padding-bottom: 20px;">contacto@vidacoaches.com</a>
 
                     <p style="color: orange;font-size: 0.9rem;">***</p>
-                    <h6 style="color: orange;font-size: 0.9rem;">Seguinos en nuestras redes</h6>
+                    <div style="padding-left: 30px;">
+                        <h6 style="color: orange;font-size: 1.1rem; padding-top: 20px; padding-bottom: 20px;">Seguinos en nuestras redes</h6>
                     <a style="padding: 10px;" class="sociales" href="https://www.instagram.com/vidacoaches/"
                         target="_blank"><img src="imgs/instagram.png"
                             alt="link para visitarnos en nuestro instagram"></a>
-                    <a style="padding: 10px;" class="sociales"
+                    <a style="padding: 30px;" class="sociales"
                         href="https://www.facebook.com/profile.php?id=100092736528246" target="_blank"><img
                             src="imgs/facebook.png" alt="link para visitarno en facebook"></a>
                     <a style="padding: 10px;" class="sociales rounded"
                         href="https://www.tiktok.com/@vidacoaches?lang=es" target="_blank"><img src="imgs/tik-tok.png"
                             alt="link para visitarnos en tik tok"></a>
+                    </div>
 
                 </div>
             </div>
@@ -518,18 +524,19 @@
     <!-- Blog Section -->
     <section class="section" id="blog" style="scroll-margin: 40px;">
         <div class="container">
-            <h6 class="section-title mb-0 text-center" style="padding-bottom: 30px;">Blog coach de vida</h6>
-
-            <div class="row">
+            <h6 class="section-title mb-0 text-center" style="padding-bottom: 70px; font-size: 1.5rem;">Blog Vida Coaches</h6>
+            
+            <div class="row text-center">
                 <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="imgs/blog-1.jpg" alt="" class="card-img-top w-100">
-                        <div class="card-body">
-                            <h6 class="card-title">El dolor de migrar</h6>
-                            <p>Los desafíos emocionales de dejar nuestro hogar</p>
-                            <a href="javascript:void(0)" onclick="window.modal1.showModal();"
-                                class="small text-muted">Ir al articulo</a>
+                    <div class="card border-0 mb-4 h-100" style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">                        
+                        <div class="card-body" >
+                            <img src="imgs/avion.png" alt="avion" class="card-img-top " style=" margin:20px; width: 28%;">
+                            <h6 class="card-title" style="font-size: 1.2rem;">El dolor de migrar</h6>
+                            <p class="mb-0">Los desafíos emocionales</p>
+                            <p>de dejar nuestro hogar</p>                            
                         </div>
+                        <a href="javascript:void(0)" onclick="window.modal1.showModal();"
+                                class="small text-muted" style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px;"><b> - Ir al articulo -</b></a>
                     </div>
                     <dialog id="modal1" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
 
@@ -565,22 +572,23 @@
                             significativo en su salud mental y emocional. Es importante reconocer y abordar estos
                             desafíos, brindando apoyo y recursos adecuados para ayudar a los migrantes a sanar y
                             adaptarse a su nuevo entorno. En Vida Coaches estamos para ayudarte a reconectar, manejar la
-                            transición, adaptarte y seguir adelante.<a href="#contact"
+                            transición, adaptarte y seguir adelante.<a  href="#contact"
                                 style="font-size: 1.1rem; color: orangered;font-weight: bolder;"
                                 onclick="window.modal1.close();"> Escríbenos!</a></p>
 
-                        <a href="#blog" class="btn btn-primary btn-sm rounded" onclick="window.modal1.close();">x</a>
+                        <a href="#blog" class="btn btn-primary btn-sm rounded" onclick="window.modal1.close();">Volver</a>
                     </dialog>
                 </div>
                 <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="imgs/blog-3.png" alt="" class="card-img-top w-100">
-                        <div class="card-body">
+                    <div class="card border-0 mb-4 h-100" style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">
+                        
+                        <div class="card-body" >
+                            <img src="imgs/equilibrio.png" alt="balanza equilibrio entre corazon y obligaciones" class="card-img-top" style=" margin:20px; width: 28%;">
                             <h6 class="card-title">Encontrando el equilibrio con tu pareja.</h5>
-                                <p>Relaciones de parejas con hijos</p>
-                                <a href="javascript:void(0)" onclick="window.modal2.showModal();"
-                                    class="small text-muted">Ir al articulo</a>
+                                <p>Relaciones de parejas con hijos</p>                                
                         </div>
+                        <a href="javascript:void(0)" onclick="window.modal1.showModal();"
+                                class="small text-muted" style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px;"><b> - Ir al articulo -</b></a>
                     </div>
                     <dialog id="modal2" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
 
@@ -619,18 +627,19 @@
                                 href="#contact" style="font-size: 1.1rem; color: orangered;font-weight: bolder;"
                                 onclick="window.modal2.close();"> Escríbenos!</a></p>
 
-                        <a href="#blog" class="btn btn-primary btn-sm rounded" onclick="window.modal2.close();">x</a>
+                        <a href="#blog" class="btn btn-primary btn-sm rounded" onclick="window.modal2.close();">Volver</a>
                     </dialog>
                 </div>
                 <div class="col-md-4">
-                    <div class="card border-0 mb-4">
-                        <img src="imgs/blog-2.png" alt="" class="card-img-top w-100">
-                        <div class="card-body">
+                    <div class="card border-0 mb-4 h-100" style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">                        
+                        <div class="card-body" >
+                            <img src="imgs/laboral.png" alt="hombre llevando engranaje cuesta arriba" class="card-img-top " style=" margin:20px; width: 28%;">
                             <h6 class="card-title">¡Cuidado con el Monstruo de la Ansiedad Laboral!</h6>
                             <p>El mundo laboral y sus obligaciones.</p>
-                            <a href="javascript:void(0)" onclick="window.modal3.showModal();"
-                                class="small text-muted">Ir al articulo</a>
+                            
                         </div>
+                        <a href="javascript:void(0)" onclick="window.modal1.showModal();"
+                                class="small text-muted" style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px;"><b> - Ir al articulo -</b></a>
                     </div>
                     <dialog id="modal3" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
 
@@ -674,7 +683,7 @@
                                 style="font-size: 1.1rem; color: orangered;font-weight: bolder;"
                                 onclick="window.modal3.close();"> Escríbenos!</a></p>
 
-                        <a href="#blog" class="btn btn-primary btn-sm rounded" onclick="window.modal3.close();">x</a>
+                        <a href="#blog" class="btn btn-primary btn-sm rounded" onclick="window.modal3.close();">Volver</a>
                     </dialog>
                 </div>
             </div>

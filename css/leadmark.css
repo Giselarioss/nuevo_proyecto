@@ -4116,6 +4116,13 @@ input[type=button].btn-block {
   border-bottom-left-radius: 0;
 }
 
+dialog {
+  text-align: start;
+}
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.897);
+}
+
 .card_new {
   background: rgba(255, 255, 255, 0.712);
   box-shadow: 0 8px 15px 0 rgba(69, 71, 87, 0.226);
