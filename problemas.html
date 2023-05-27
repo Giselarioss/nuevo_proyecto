@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Coach</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+    <link rel="stylesheet" href="css/leadmark.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" >       
+    <header class="header" style="min-height: 1200px;" >        
+        <div class="overlay"style="background: white; color: black;" > 
+            <a href="index.html" class="text-center" style="padding-bottom: 50px;">
+                <img src="imgs/logo.png" alt="Logo" style="width: 200px">
+                                
+            </a>  
+            <br style="color:black">                   
+            <p class="text-center"style="font-size:1.3rem">Desde <b style="color: rgb(245, 105, 25);">Vida Coaches</b>, te invitamos a unirte...llena el formulario y nos pondremos en contacto con vos.</p>
+
+                <div id="contact" class="section pb-0" >
+                    <div class="container-fluid">
+                        <div class="row" style="justify-content: space-around">                            
+                            <div class="col-md-7">               
+                                <form style="padding: 13px; border-radius: 10px;" style="background-image: url(imgs/mundo.jpg); background-position: center; background-size: cover;">                
+                                    <div class="form-row" >
+                                        <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
+                                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="nombre y apellido"
+                                                placeholder="..." required autocomplete="nombre y apellido"> Nombre y apellido
+                                        </div>
+                                        <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
+                                            <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email"
+                                                placeholder="..." required autocomplete="email">Correo electrónico
+                                        </div>
+                                        <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
+                                            <input type="tel" class="form-control text-white rounded-0 bg-transparent" name="telefono"
+                                                placeholder="..." autocomplete="telefono">Teléfono (Whastapp)
+                                        </div>                                 
+
+
+
+                                        <label for="experiencia" style="font-size: 1.1rem; padding-top: 20px;">Años de experiencia : </label>
+                                        <select name="experiencia" id="experienica"
+                                            style="font-size: 1rem; color: black; background-color: white"
+                                            class="form-control form-control-sm" required>
+                
+                                            <option value="experiencia"> 1 a 2 años.</option>
+                                            <option value="experiencia"> 2 a 3 años​.</option>
+                                            <option value="experiencias"> 3 a 5 años.</option>
+                                            <option value="experiencia"> 5 o mas.</option>                                            
+                
+                                        </select>
+                                        <div class="form-group col-sm-4" style="padding-top: 30px; font-size: 1.1rem;">
+                                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="pais"
+                                                placeholder="..." required>Ciudad y pais donde vives
+                                        </div>
+                                        <div>
+                                            <label for="genero" name="genero"style="font-size: 1.1rem; padding-right: 50px; padding-left: 10px; padding-top: 50px;" required>Genero:</label>
+                                            <input type="radio" id="masculino" value="masculino" name="genero" />Masculino
+                                            <input type="radio" id="femenino" value="femenino" name="genero"/>Femenino
+                                        </div>
+                                        <div>
+                                            <label for="url" style="font-size: 1.1rem; padding-right: 50px; padding-top: 50px;">URL LinkedIn:</label>
+                                            <input type="url" id="url" name="url" style="margin-top: 30px; padding-right: 120px; margin-right: 70px;"> 
+                                        </div>
+                                        <div>                                            
+                                            <label for="file" style="font-size: 1.1rem; padding-right: 20px; padding-top: 30px;" required>Adjuntar CV</label>
+                                            <input type="file" name="archivossubidos[]" multiple>                                   
+                                        </div>
+                                        <div>
+                                            <label for="problemas" style="font-size: 1.1rem; padding-top: 30px;">Temas donde puedes ayudar: ( puedes elegir varias opciones )</label>
+                                            <select name="problemas" id="problemas" style="font-size: 1rem; color: black; background-color: white"
+                                                class="form-control form-control-sm" multiple required>
+                                        
+                                                <option value="adaptarse"> - Adarptarse a un nuevo, país, cultura, sociedad o ambiente.
+                                                </option>
+                                                <option value="sobrellevar">- Sobrellevar la perdida personal de un ser querido o ruptura
+                                                    de pareja.​</option>
+                                                <option value="estres">- Manejar el estres de cuidar a los hijos y mantener un hogar.​
+                                                </option>
+                                                <option value="lidiar">- Lidiar con problemas laborales, jefes dificiles y crecer
+                                                    profesionalmente.</option>
+                                                <option value="mejorar">- Mejorar tus relaciones de pareja y familiares.​</option>
+                                                <option value="pensar">- Pensar en ti mismo y vivir mas plenamente.​</option>
+                                                <option value="otros">- Otros...</option>                                        
+                                            </select>                                        
+                                        </div>         
+
+                                        <div class="form-group col-12" style="padding-top: 15px;">
+                                            <textarea name="message" id="" cols="30" rows="4"
+                                                class="form-control text-white rounded-0 bg-transparent" style="font-size: 1.1rem;"
+                                                placeholder="Cuentanos mas sobre tu experiencia (opcional)"></textarea>
+                
+                                        </div>
+                                        <div class="form-group col-12 mb-0">
+                                            <a href="mailto:contacto@vidacoaches.com" target="_blank">
+                                                <button type="submit" class="btn btn-primary rounded w-md mt-3"
+                                                    style="font-size: 1.1rem;  background-color: rgb(245, 105, 25);">Enviar</button>
+                                            </a>
+            
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-5 my-3 text-center">
+                                <h6 style="color:  rgb(245, 105, 25); font-size: 1.2rem; padding-bottom: 10px; padding-top: 50px;"><b>Escribinos a: </b></h6>
+                                <h6 class="mb-0" style="color:  rgb(245, 105, 25); font-size: 1rem;">Whastapp</h6>
+                                <a href="https://api.whatsapp.com/send?phone=+540111535965203&text=Hola, Necesito mas informacion!">
+                                    <p class="mb-4" style="color: black; font-size: 1.1rem;">+ 54 1135965203</p>
+                                </a>
+                
+                                <h6 class="mb-0" style="color:  rgb(245, 105, 25); font-size: 1rem;">Email</h6>
+                                <a class="mb-4" href="mailto:contacto@vidacoaches.com" target="_blank"
+                                    style="color: black; font-size: 1rem; padding-bottom: 20px;">contacto@vidacoaches.com</a>
+                
+                                <p style="color:  rgb(245, 105, 25);font-size: 0.9rem;">***</p>
+                                <div style="padding-left: 30px;">
+                                    <h6 style="color:  rgb(245, 105, 25);font-size: 1.1rem; padding-top: 20px; padding-bottom: 20px;"><b>Seguinos en nuestras redes</b></h6>
+                                    <a style="padding: 10px;" class="sociales" href="https://www.instagram.com/vidacoaches/"
+                                        target="_blank"><img src="imgs/instagram.png"
+                                            alt="link para visitarnos en nuestro instagram"></a>
+                                    <a style="padding: 30px;" class="sociales"
+                                        href="https://www.facebook.com/profile.php?id=100092736528246" target="_blank"><img
+                                            src="imgs/facebook.png" alt="link para visitarno en facebook"></a>
+                                    <a style="padding: 10px;" class="sociales rounded"
+                                        href="https://www.tiktok.com/@vidacoaches?lang=es" target="_blank"><img src="imgs/tik-tok.png"
+                                            alt="link para visitarnos en tik tok"></a>
+                                </div>
+                
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+        </div>        
+    </header>
+    
+
+
+
+    <footer class="mt-5 py-4 border-top border-secondary text-center" style="background-color: black; color: white;">
+        <p class="mb-0 small"> Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script>, Vida coaches. Designed By <a
+                href="https://github.com/Giselarioss" target="_blank">GR.</a> All rights reserved
+        </p>
+    </footer>
+    <!-- End of Page Footer -->
+
+    <!-- core  -->
+    <script src="vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- LeadMark js -->
+    <script src="js/leadmark.js"></script>
+
+</body>
+
+</html>
