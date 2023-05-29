@@ -465,7 +465,7 @@
 
                 <div class="col-md-7">
 
-                    <form>
+                    <form  action="https://formsubmit.co/contacto@vidacoaches.com" method="POST" >
 
                         <div class="form-row">
                             <label for="problemas" style="font-size: 1.1rem;">Donde necesitas apoyo:</label>
@@ -473,23 +473,24 @@
                                 style="font-size: 1rem; color: white; background-color: black"
                                 class="form-control form-control-sm" required>
 
-                                <option value="adaptarse">Adarptarme a un nuevo, país, cultura, sociedad o ambiente.
+                                <option value="Adarptarme a un nuevo, país, cultura, sociedad o ambiente.">Adarptarme a un nuevo, país, cultura, sociedad o ambiente.
                                 </option>
-                                <option value="sobrellevar">Sobrellevar la perdida personal de un ser querido o ruptura
+                                <option value="Sobrellevar la perdida personal de un ser querido o ruptura">Sobrellevar la perdida personal de un ser querido o ruptura
                                     de pareja.​</option>
-                                <option value="estres">Manejar el estres de cuidar a los hijos y mantener un hogar.​
+                                <option value="Manejar el estres de cuidar a los hijos y mantener un hogar.​">Manejar el estres de cuidar a los hijos y mantener un hogar.​
                                 </option>
-                                <option value="lidiar">Lidiar con problemas laborales, jefes dificiles y crecer
+                                <option value="Lidiar con problemas laborales, jefes dificiles y crecer
+                                profesionalmente.">Lidiar con problemas laborales, jefes dificiles y crecer
                                     profesionalmente.</option>
-                                <option value="mejorar">Mejorar tus relaciones de pareja y familiares.​</option>
-                                <option value="pensar">Pensar en ti mismo y vivir mas plenamente.​</option>
-                                <option value="otros">Otros...</option>
+                                <option value="Mejorar tus relaciones de pareja y familiares.">Mejorar tus relaciones de pareja y familiares.​</option>
+                                <option value="Pensar en ti mismo y vivir mas plenamente.">Pensar en ti mismo y vivir mas plenamente.​</option>
+                                <option value="Otros...">Otros...</option>
 
                             </select>
                             <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
                                 <input type="text" class="form-control text-white rounded-0 bg-transparent"
-                                    placeholder="..." required id="nombre y apellido">
-                                <label for="nombre y apellido"> Nombre y apellido</label>
+                                    placeholder="..." required name="nombre" id="nombre">
+                                <label for="nombre"> Nombre y apellido</label>
                             </div>
                             <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
                                 <input type="email" class="form-control text-white rounded-0 bg-transparent"
@@ -516,13 +517,15 @@
 
                             </div>
                             <div class="form-group col-12 mb-0">
-                                <a href="mailto:contacto@vidacoaches.com" target="_blank">
-                                    <button type="submit" class="btn btn-primary rounded w-md mt-3"
+                                
+                                <button type="submit" class="btn btn-primary rounded w-md mt-3"
                                         style="font-size: 1.1rem; margin-bottom: 40px;">Enviar</button>
-                                </a>
 
                             </div>
                         </div>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
                 <div class="col-md-5 my-3 text-center">

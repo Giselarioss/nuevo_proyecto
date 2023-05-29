@@ -27,84 +27,94 @@
                     <div class="container-fluid">
                         <div class="row" style="justify-content: space-around">                            
                             <div class="col-md-7">               
-                                <form style="padding: 13px; border-radius: 10px;" >                
+                                <form style="padding: 13px; border-radius: 10px;" action="https://formsubmit.co/contacto@vidacoaches.com" method="POST" >                
                                     <div class="form-row" >
                                         <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
-                                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="nombre y apellido"
-                                                placeholder="..." required autocomplete="nombre y apellido"> Nombre y apellido
+                                            <input type="text" class="form-control text-black rounded-0 bg-transparent" name="nombre" id="nombre"
+                                                placeholder="..." required autocomplete="nombre y apellido">
+                                            <label for="nombre">Nombre y apellido</label>
                                         </div>
                                         <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
-                                            <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email"
-                                                placeholder="..." required autocomplete="email">Correo electrónico
+                                            <input type="email" class="form-control text-black rounded-0 bg-transparent" name="email" id="email"
+                                                placeholder="..." required autocomplete="email">
+                                            <label for="email">Correo electrónico</label>
                                         </div>
                                         <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
-                                            <input type="tel" class="form-control text-white rounded-0 bg-transparent" name="telefono"
-                                                placeholder="..." autocomplete="telefono">Teléfono (Whastapp)
+                                            <input type="text" class="form-control text-black rounded-0 bg-transparent" name="telefono" id="telefono"
+                                                placeholder="..." >
+                                            <label for="telefono">Teléfono (Whastapp)</label>
                                         </div>                                 
 
 
 
                                         <label for="experiencia" style="font-size: 1.1rem; padding-top: 20px;">Años de experiencia : </label>
-                                        <select name="experiencia" id="experienica"
+                                        <select name="experiencia" id="experiencia"
                                             style="font-size: 1rem; color: black; background-color: white"
                                             class="form-control form-control-sm" required>
                 
-                                            <option value="experiencia"> 1 a 2 años.</option>
-                                            <option value="experiencia"> 2 a 3 años​.</option>
-                                            <option value="experiencias"> 3 a 5 años.</option>
-                                            <option value="experiencia"> 5 o mas.</option>                                            
+                                            <option value=" 1 a 2 años."> 1 a 2 años.</option>
+                                            <option value="2 a 3 años"> 2 a 3 años​.</option>
+                                            <option value=" 3 a 5 años."> 3 a 5 años.</option>
+                                            <option value="5 o mas."> 5 o mas.</option>                                            
                 
                                         </select>
                                         <div class="form-group col-sm-4" style="padding-top: 30px; font-size: 1.1rem;">
-                                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="pais"
-                                                placeholder="..." required>Ciudad y pais donde vives
+                                            <input type="text" class="form-control text-black rounded-0 bg-transparent" name="pais" id="pais"
+                                                placeholder="..." required>
+                                            <label for="pais">Ciudad y pais donde vives</label>
                                         </div>
                                         <div>
-                                            <label for="genero" name="genero"style="font-size: 1.1rem; padding-right: 50px; padding-left: 10px; padding-top: 50px;" required>Genero:</label>
-                                            <input type="radio" id="masculino" value="masculino" name="genero" />Masculino
-                                            <input type="radio" id="femenino" value="femenino" name="genero"/>Femenino
+                                            <label for="genero" style="font-size: 1.1rem; padding-right: 50px; padding-left: 10px; padding-top: 50px;" required>Genero:</label>
+                                            <input type="radio" id="genero" value="masculino" name="genero" />Masculino
+                                            <input type="radio" id="genero" value="femenino" name="genero"/>Femenino
                                         </div>
                                         <div>
                                             <label for="url" style="font-size: 1.1rem; padding-right: 50px; padding-top: 50px;">URL LinkedIn:</label>
                                             <input type="url" id="url" name="url" style="margin-top: 30px; padding-right: 120px; margin-right: 70px;"> 
                                         </div>
                                         <div>                                            
-                                            <label for="file" style="font-size: 1.1rem; padding-right: 20px; padding-top: 30px;" required>Adjuntar CV</label>
-                                            <input type="file" name="archivossubidos[]" multiple>                                   
+                                            <label for="archivo" style="font-size: 1.1rem; padding-right: 20px; padding-top: 30px;" required>Adjuntar CV</label>
+                                            <input type="file" name="archivossubidos[]" id="archivo" multiple>                                   
                                         </div>
                                         <div>
                                             <label for="problemas" style="font-size: 1.1rem; padding-top: 30px;">Temas donde puedes ayudar: ( puedes elegir varias opciones )</label>
                                             <select name="problemas" id="problemas" style="font-size: 1rem; color: black; background-color: white"
                                                 class="form-control form-control-sm" multiple required>
                                         
-                                                <option value="adaptarse"> - Adarptarse a un nuevo, país, cultura, sociedad o ambiente.
+                                                <option value="- Adarptarse a un nuevo, país, cultura, sociedad o ambiente."> - Adarptarse a un nuevo, país, cultura, sociedad o ambiente.
                                                 </option>
-                                                <option value="sobrellevar">- Sobrellevar la perdida personal de un ser querido o ruptura
+                                                <option value="- Sobrellevar la perdida personal de un ser querido o ruptura
+                                                de pareja.r">- Sobrellevar la perdida personal de un ser querido o ruptura
                                                     de pareja.​</option>
-                                                <option value="estres">- Manejar el estres de cuidar a los hijos y mantener un hogar.​
+                                                <option value="- Manejar el estres de cuidar a los hijos y mantener un hogar.">- Manejar el estres de cuidar a los hijos y mantener un hogar.​
                                                 </option>
-                                                <option value="lidiar">- Lidiar con problemas laborales, jefes dificiles y crecer
+                                                <option value="- Lidiar con problemas laborales, jefes dificiles y crecer
+                                                profesionalmente.">- Lidiar con problemas laborales, jefes dificiles y crecer
                                                     profesionalmente.</option>
-                                                <option value="mejorar">- Mejorar tus relaciones de pareja y familiares.​</option>
-                                                <option value="pensar">- Pensar en ti mismo y vivir mas plenamente.​</option>
-                                                <option value="otros">- Otros...</option>                                        
+                                                <option value="- Mejorar tus relaciones de pareja y familiares.">- Mejorar tus relaciones de pareja y familiares.​</option>
+                                                <option value="- Pensar en ti mismo y vivir mas plenamente.">- Pensar en ti mismo y vivir mas plenamente.​</option>
+                                                <option value="- Otros...">- Otros...</option>                                        
                                             </select>                                        
                                         </div>         
 
                                         <div class="form-group col-12" style="padding-top: 15px;">
-                                            <textarea name="message" id="" cols="30" rows="4"
-                                                class="form-control text-white rounded-0 bg-transparent" style="font-size: 1.1rem;"
+                                            <textarea name="mensaje" id="mensaje" cols="30" rows="4"
+                                                class="form-control text-black rounded-0 bg-transparent" style="font-size: 1.1rem;"
                                                 placeholder="Cuentanos mas sobre tu experiencia (opcional)"></textarea>
+                                            <label for="mensaje"></label>
                 
                                         </div>
-                                        <div class="form-group col-12 mb-0">
-                                            <a href="mailto:contacto@vidacoaches.com" target="_blank">
-                                                <button type="submit" class="btn btn-primary rounded w-md mt-3"
-                                                    style="font-size: 1.1rem;  background-color: rgb(245, 105, 25);">Enviar</button>
-                                            </a>
-            
+                                        <div class="form-group col-12 mb-0">                                       
+                                            <button type="submit" class="btn btn-primary rounded w-md mt-3"
+                                                style="font-size: 1.1rem;  background-color: rgb(245, 105, 25);">Enviar
+                                            </button>                                   
+                                        
                                         </div>
                                     </div>
+                                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+                                    <input type="hidden" name="_template" value="table">
+                                    <input type="hidden" name="_captcha" value="false">
+                                    
                                 </form>
                             </div>
                             <div class="col-md-5 my-3 text-center">
