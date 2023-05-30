@@ -78,8 +78,7 @@
 
     &.has-img-bg {
         position: relative;
-        background: url(../imgs/section.jpg) no-repeat center top fixed;
-        background-size: cover;
+        
         color: $white;
 
         * {
@@ -189,5 +188,6 @@
             
         }
     }
+    
 }
 

@@ -1,11 +1,15 @@
 <?php
 
 //variables
-$problemas = $_POST ['problemas']
 $nombre = $_POST['nombre'];
 $mail = $_POST['mail'];
 $telefono = $_POST['telefono'];
+$experiencia = $_POST ['experiencia'];
 $pais = $_POST['pais'];
+$genero = $_POST['genero'];
+$url = $_POST['url'];
+$archivo = $_POST['archivo'];
+$problemas = $_POST ['problemas']
 $mensaje = $_POST['mensaje'];
 
 
@@ -14,8 +18,12 @@ $mensaje = $_POST['mensaje'];
 $mensaje = "Este mensaje fue enviado por: ", $nombre, "\r\n";
 $mensaje ,= "Su mail es: ", $mail, "\r\n";
 $mensaje ,= "Telefono de contacto: ", $telefono, "\r\n";
+$mensaje ,= "Genero: ", $genero , "\r\n";
+$mensaje ,= "Experiencia: ", $experienica, "\r\n";
 $mensaje ,= "Pais: ", $pais, "\r\n";
-$mensaje ,= " Necesita apoyo en: ", $problemas, "\r\n";
+$mensaje ,= "LinkedIn: ", $url , "\r\n";
+$mensaje ,= "CV: ", $archivo , "\r\n";
+$mensaje ,= " Tema en el que puedo ayudar: ", $problemas, "\r\n";
 $mensaje ,= "Mensaje: ", $_POST['mensaje'], "\r\n";
 $mensaje ,= "Enviado el: ", date('d/m/y', time());
 
