@@ -9,6 +9,9 @@ $pais = $_POST['pais'];
 $problemas = $_POST ['problemas'];
 $mensaje = $_POST['mensaje'];
 
+//texto plano
+$header .= "Content-Type: text/plain";
+
 
 
 // como va a llegar el cuerpo del mail 

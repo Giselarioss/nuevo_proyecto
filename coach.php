@@ -12,7 +12,8 @@ $archivo = $_POST['archivo'];
 $problemas = $_POST ['problemas'];
 $mensaje = $_POST['mensaje'];
 
-
+//texto plano
+$header .= "Content-Type: text/plain";
 
 // como va a llegar el cuerpo del mail 
 $mensaje = "Este mensaje fue enviado por: ". $nombre . ",\r\n";
@@ -26,6 +27,8 @@ $mensaje .= "CV: ". $archivo . "\r\n";
 $mensaje .= " Tema en el que puedo ayudar: ". $problemas. "\r\n";
 $mensaje .= "Mensaje: ". $_POST['mensaje']. "\r\n";
 $mensaje .= "Enviado el: ". date('d/m/Y', time());
+
+
 
 $para = 'contacto@vidacoaches.com';
 $asunto = 'Mensaje de Vida coach';
