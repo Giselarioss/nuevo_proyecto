@@ -1,11 +1,12 @@
 <?php
 
 //variables
-$problemas = $_POST ['problemas']
+
 $nombre = $_POST['nombre'];
 $mail = $_POST['mail'];
 $telefono = $_POST['telefono'];
 $pais = $_POST['pais'];
+$problemas = $_POST ['problemas'];
 $mensaje = $_POST['mensaje'];
 
 

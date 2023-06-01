@@ -9,7 +9,7 @@ $pais = $_POST['pais'];
 $genero = $_POST['genero'];
 $url = $_POST['url'];
 $archivo = $_POST['archivo'];
-$problemas = $_POST ['problemas']
+$problemas = $_POST ['problemas'];
 $mensaje = $_POST['mensaje'];
 
 
