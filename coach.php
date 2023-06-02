@@ -2,35 +2,33 @@
 
 //variables
 $nombre = $_POST['nombre'];
-$mail = $_POST['mail'];
+$mail = $_POST['email'];
 $telefono = $_POST['telefono'];
 $experiencia = $_POST ['experiencia'];
 $pais = $_POST['pais'];
-$genero = $_POST['genero'];
 $url = $_POST['url'];
 $archivo = $_POST['archivo'];
-$problemas = $_POST ['problemas'];
 $mensaje = $_POST['mensaje'];
 
-//texto plano
+
+$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
+$header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 
 // como va a llegar el cuerpo del mail 
 $mensaje = "Este mensaje fue enviado por: ". $nombre . ",\r\n";
 $mensaje .= "Su mail es: ". $mail . "\r\n";
 $mensaje .= "Telefono de contacto: ". $telefono . "\r\n";
-$mensaje .= "Genero: ". $genero . "\r\n";
-$mensaje .= "Experiencia: ". $experienica . "\r\n";
+$mensaje .= "Experiencia: ". $experiencia . "\r\n";
 $mensaje .= "Pais: ". $pais . "\r\n";
 $mensaje .= "LinkedIn: ". $url . "\r\n";
 $mensaje .= "CV: ". $archivo . "\r\n";
-$mensaje .= " Tema en el que puedo ayudar: ". $problemas. "\r\n";
 $mensaje .= "Mensaje: ". $_POST['mensaje']. "\r\n";
 $mensaje .= "Enviado el: ". date('d/m/Y', time());
 
 
 
-$para = 'contacto@vidacoaches.com';
+$para = 'gisee_rios@hotmail.com';
 $asunto = 'Mensaje de Vida coach';
 
 // funcion mail
@@ -41,5 +39,5 @@ $asunto = 'Mensaje de Vida coach';
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
 //Redireccion al haber enviado el form
-header("Location:exito.html");
+header('Location:exito.html');
 ?>
