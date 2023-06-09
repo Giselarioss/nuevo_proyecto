@@ -2,16 +2,21 @@
 
 //variables
 
-$nombre = $_POST['nombre'];
-$mail = $_POST['email'];
-$telefono = $_POST['telefono'];
-$pais = $_POST['pais'];
-$problemas = $_POST ['problemas'];
-$mensaje = $_POST['mensaje'];
+$nombre                  = filter_var($_POST['nombre'], FILTER_SANITIZE_STRING);
+$from_email              = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+$reply_to_email          = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+$telefono                = filter_var($_POST['telefono'], FILTER_SANITIZE_STRING);
+$pais                    = filter_var($_POST['pais'], FILTER_SANITIZE_STRING);
+$problemas               = filter_var($_POST ['problemas'], FILTER_SANITIZE_STRING);
+$mensaje                 = filter_var( $_POST['mensaje'], FILTER_SANITIZE_STRING);
 
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+$boundary                = md5("pera");
+
+//Encabezados
+$headers = "MIME-Version: 1.0\r\n"; 
+$headers .= "From:".$from_email."\r\n"; 
+$headers .= "Reply-To: ".$reply_to_email."" . "\r\n";
+$headers .= "Content-Type: multipart/mixed; boundary = $boundary\r\n\r\n"; 
 
 
 
@@ -33,7 +38,7 @@ $asunto = 'Mensaje de Vida coach';
 // 2- el asunto
 // definir el mensaje
 //definir el header
-mail($para, $asunto, utf8_decode($mensaje), $header);
+mail($para, $asunto, utf8_decode($mensaje), $headers);
 
 //Redireccion al haber enviado el form
 header('Location:exito.html');

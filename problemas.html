@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NQD73KXTW"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6NQD73KXTW');
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MZGZDWK');
     </script>
+    <!-- End Google Tag Manager -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
         content="Sesiones con coaches profesionales, en tu idioma, de manera virtual y flexible a tus tiempos​​. Te ayudamos a cuidar tu mente, afrontar problemas de una mejor manera y ser tu mismo bajo cualquier situacion.">
@@ -25,13 +25,17 @@
     <meta property='og:image' content="http://www.vidacoaches.com/imgs/logo.png">
     <meta property='og:description'
         content="Sesiones con coaches profesionales, en tu idioma, de manera virtual y flexible a tus tiempos​​. Te ayudamos a cuidar tu mente, afrontar problemas de una mejor manera y ser tu mismo bajo cualquier situacion.">
-    <!-- font icons -->
-    <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
+    
     <!-- Bootstrap + LeadMark main styles -->
     <link rel="stylesheet" href="css/leadmark.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" >       
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" >
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZGZDWK"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->       
     <header class="header container" style="min-height: 1900px;">        
         <div class="overlay"style="background: white; color: black; align-items: stretch" > 
             <a href="index.html" class="text-center" style="padding-bottom: 50px;">
@@ -43,8 +47,9 @@
                 <div id="contact" class="section pb-0" >
                     <div class="container">
                         <div class="row" style="justify-content: space-around">                            
-                            <div class="col-md-7">               
-                                <form style="padding: 13px; border-radius: 10px; max-width: 100%;" action="coach.php" method="POST">                
+                            <div class="col-md-7">    
+                                           
+                                <form style="padding: 13px; border-radius: 10px; max-width: 100%;" action="coach.php" method="POST" enctype="multipart/form-data" class="FormularioAjax">                
                                     <div class="form-row" >
                                         <div class="form-group col-sm-4" style="padding-top: 15px; font-size: 1.1rem;">
                                             <label for="nombre">Nombre y apellido</label>
@@ -91,7 +96,7 @@
                                         </div>
                                         <div>                                            
                                             <label for="archivo" style="font-size: 1.1rem; padding-right: 50px; padding-top: 30px;" required>Adjuntar CV</label>
-                                            <input type="file" name="archivo" id="archivo" multiple>                                   
+                                            <input type="file" name="archivo" id="archivo" accept=" .pdf, .docx">                                   
                                         </div>                                       
 
                                         <div class="form-group col-12" style="padding-top: 15px;">
