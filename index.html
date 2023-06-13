@@ -13,6 +13,7 @@
     </script>
     <!-- End Google Tag Manager -->
     
+    <meta name="theme-color" content="#478ac9">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!---meta description--->
     <meta name="description"
@@ -47,7 +48,7 @@
 
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="imgs/logo.png" alt="Logo" style="width: 180px">
+                <img src="imgs/logo.png" alt="Logo" style="width: 160px">
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -57,24 +58,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" style="font-size: 1rem;" href="#about">Como Funciona</a>
+                        <a class="nav-link" style="font-size: 0.9rem;" href="#about">Como Funciona</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="font-size: 1rem;" href="#section">Problemas?</a>
+                        <a class="nav-link" style="font-size: 0.9rem;" href="#section">Problemas?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="font-size: 1rem;" href="#coaches">Coaches</a>
+                        <a class="nav-link" style="font-size: 0.9rem;" href="#coaches">Coaches</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="font-size: 1rem;" href="#portfolio">Tarifas</a>
+                        <a class="nav-link" style="font-size: 0.9rem;" href="#portfolio">Tarifas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="font-size: 1rem;" href="#blog">Blog</a>
+                        <a class="nav-link" style="font-size: 0.9rem;" href="#blog">Blog</a>
                     </li>
 
                     <li class="nav-item">
                         <a href="#contact" class="ml-4 nav-link btn btn-primary btn-sm rounded"
-                            style="font-size: 1rem;">Empecemos</a>
+                            style="font-size: 0.9rem;">Empecemos</a>
                     </li>
                 </ul>
             </div>
@@ -84,15 +85,69 @@
 
     <!-- Page Header -->
     <header class="header">
-        <div class="overlay">
-            <h1 class="subtitle" style="padding-top: 40px;">Si cuidas tu cuerpo, tambien cuida tu mente</h1>
-            <h2 class="title text-center" style="font-size: 2.5rem; padding-top: 60px;">¿Te sientes mal?</h2>
-            <div style="padding: 20px 20px 0 20px;">
-                <p style="font-size: 1rem; letter-spacing: 3px;" class="text-center">Todos pasamos por momentos difíciles, sobre todo si estamos lejos de nuestra familia, amigos o país. Tal vez una pérdida de un ser querido, problemas con tu pareja, dificultades en el trabajo.</p>
-                <p style="font-size: 1rem;letter-spacing: 3px;" class="text-center">Si cuidamos nuestro cuerpo tratando
-                    de comer sano, visitando al doctor o haciendo ejercicios, de
-                    la misma manera tenemos que cuidar nuestra mente.</p>
+        <div class="overlay" >
+            <div class="row section">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0 text-center">
+                    <h1 class="subtitle" style="padding-top: 50px;">Si cuidas tu cuerpo, tambien cuida tu mente</h1>
+                    <h2 class="title text-center" style="font-size: 2.5rem; padding-top: 60px;">¿Te sientes mal?</h2>
+                    <div style="padding: 20px 20px 0 20px;">
+                        <p style="font-size: 1rem; letter-spacing: 3px;" class="text-center">Potencia y crece con nuestro sevicio
+                            personalizado. </p>
+                        <p style="font-size: 1rem; letter-spacing: 3px;" class="text-center">Te ayudamos a cuidar tu mente y
+                            afrontar problemas. Todo de manera virtual, en tu idioma
+                            y
+                            flexibles a tus tiempos</p>
+            
+                    </div>
+                </div>
+                <div class="col-md-6 pl-md-5">                               
+                    <div class="contenedor-formulario" style="text-align:center;padding:10px;">            
+                        <h6 style="font-size: 1.2rem; padding-top: 5px;">Comunicate con nosotros</h6>            
+                        <form action="enviar.php" method="POST" class="forms">
+                            <input class="campo-texto" id="nombres" type="text" name="nombre" placeholder="Nombre y Apellido"
+                                maxlength="20" required="" />
+                            <input class="campo-texto" id="emails" type="email" name="email" placeholder="Su email" maxlength="50"
+                                required="" />
+                            <input class="campo-texto" id="telefonos" type="text" name="telefono" placeholder="Teléfono (WhatsApp)"
+                                maxlength="20" />
+                            <input class="campo-texto" id="paiss" type="text" name="pais" placeholder="Pais - Ciudad" maxlength="20"
+                                required="" />          
+            
+                            <div>
+                                <label for="problemas" style="font-size: 1.2rem; padding-top: 20px;" class="text-white"><b>Donde necesitas apoyo:</b></label>
+                                <select name="problemas" id="problemas" class="campo-texto"
+                                    style="font-size: 1rem; color: black; background-color: white"
+                                    class="form-control form-control-sm col-md-8" required>
+            
+                                    <option value="Adaptarme a un nuevo, pais, cultura, sociedad o ambiente.">Adaptarme a
+                                        un nuevo, país, cultura, sociedad o ambiente.
+                                    </option>
+                                    <option value="Sobrellevar la perdida personal de un ser querido o ruptura">Sobrellevar
+                                        la perdida personal de un ser querido o ruptura
+                                        de pareja.​</option>
+                                    <option value="Manejar el estres de cuidar a los hijos y mantener un hogar.​">Manejar el
+                                        estrés de cuidar a los hijos y mantener un hogar.​
+                                    </option>
+                                    <option value="Lidiar con problemas laborales, jefes dificiles y crecer profesionalmente.">Lidiar
+                                        con problemas laborales, jefes
+                                        difíciles y crecer profesionalmente.</option>
+                                    <option value="Mejorar tus relaciones de pareja y familiares.">Mejorar tus relaciones de
+                                        pareja y familiares.​</option>
+                                    <option value="Pensar en ti mismo y vivir mas plenamente.">Pensar en ti mismo y vivir más
+                                        plenamente.​
+                                    </option>
+                                    <option value="Otros...">Otros...</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary rounded w-md mt-3"
+                                style="font-size: 1.1rem; margin-bottom: 40px; background-color: #f77a54;">Enviar</button> 
+                            
+                                
+                        </form>            
+                    </div>           
+                </div>           
             </div>
+           
 
         </div>
 
@@ -108,32 +163,50 @@
     </header>
     <!-- End Of Page Header -->
 
-
     <!-- About Section -->
-    <section class="section" id="about" style="scroll-margin: 40px;">
-        <div class="container">   
-    
-            <div class=" text-center">
-                <h3 style="padding-top: 20px; padding-bottom: 10px"><b>Como funciona?</b>​</h3>
-    
-                <p style="font-size: 1.1rem;">En Vida Coaches te ayudamos a cuidar tu mente, a afrontar los problemas de una mejor manera y a ser tú mismo bajo cualquier situación.</p>
-                <p style="font-size: 1.1rem;"><b>Lo hacemos en tu idioma y con coaches que te entienden. Todo de manera virtual y
-                        flexible a tus tiempos​</b></p>
+    <section class="section" id="about" style="scroll-margin: 40px; background: white;" >
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <h3 class="section-title mb-0">Como funciona?</h3>
                 
-            </div>
-            <div class="row " style="justify-content:space-evenly">
-                <img src="imgs/about-2.jpg"
-                    alt="hombre tomando un break laboral y conectandose con su coach de manera virtual"
-                    class=" shadow-sm">
-    
-                <img src="imgs/about.jpg"
-                    alt="mujer en la comodidad de su casa usando el servicio de vida coach desde su computadora"
-                    class="shadow-sm">
-            </div>
-    
+                    <p style="font-size: 1rem;">En Vida Coaches te ayudamos a cuidar tu mente, a afrontar los problemas de una mejor
+                        manera y a ser tú mismo bajo cualquier situación.</p>
+                    <p style="font-size: 1.1rem;"><b>Lo hacemos en tu idioma y con coaches que te entienden. Todo de manera virtual y
+                            flexible a tus tiempos​</b></p>
+                
+                    
+                    <img src="imgs/about.jpg"
+                        alt="mujer en la comodidad de su casa usando el servicio de vida coach desde su computadora"
+                        class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row" style="padding-top: 40px;">
+                        <div class="col-6">
+                            <img src="imgs/about-2.jpg" alt="hombre tomando un break laboral y conectandose con su coach de manera virtual" class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-6">
+                            <img src="imgs/about-3.jpg" alt="foto de una computadora, libreta, celular y lapicera " class="w-100 shadow-sm">
+                        </div>
+                        <div class="col-12 mt-4" style="padding-top: 40px;">                            
+                            <p style="font-size: 1rem;">Todos pasamos por momentos difíciles, sobre todo si estamos lejos de nuestra familia,
+                                amigos o país. Tal vez una pérdida de un ser querido, problemas con tu pareja, dificultades en el trabajo. </p>
+                            <p style="font-size: 1rem;">Si cuidamos nuestro cuerpo tratando de comer sano, visitando al doctor o haciendo ejercicios, de la misma manera tenemos que cuidar nuestra mente.</p>    
+                        </div>
+                        
+                        <button href="#contact" class="col-md-5 nav-link btn btn-primary btn-sm rounded " style="font-size: 1rem; margin-top: 20px;">Quiero una consulta</button>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>              
         </div>
     </section>
     <!-- End OF About Section -->
+
+
+    
 
     <!-- start section servicios-->
     <section id="section" class="section pt-0" style="scroll-margin: 60px; background-color: rgba(128, 128, 128, 0.219);">
@@ -199,7 +272,9 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
+            
         </div>
     </section>
     <!--the end section services-->
@@ -304,6 +379,8 @@
                 </div>
             </div>
         </div>
+        <button href="#contact" class=" nav-link btn btn-primary btn-sm rounded container col-md-3" style="font-size: 1rem; margin-top: 50px;">Quiero una consulta</button>
+
     </section>
     <!-- the end section testimonial-->
 
@@ -417,119 +494,10 @@
 
     </section>
     <!-- End of portfolio section -->
+   
 
 
-
-    <!-- Contact Section -->
-    <section id="contact" class="section pb-0"
-        style="min-height: 700px; padding-bottom: 50px; scroll-margin: 60px; background: black;">
-        <div class="container">
-            <div class="row container" style="justify-content: space-around">
-                <h4 class="mb-4 text-center text-white" style="padding-bottom: 40px;">Empecemos ... Llena el formulario y nos
-                    ponemos en contacto.</h4>
-
-                <div class="col-md-7">
-
-                    <form action="enviar.php" method="POST" class="form-row">                   
-                    
-                        <div class="form-group col-sm-4 text-white" style="padding-top: 15px; font-size: 1.1rem;">
-                            <label for="nombre"> Nombre y apellido</label>
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" placeholder="..." required
-                                name="nombre" id="nombre">
-                    
-                        </div>
-                        <div class="form-group col-sm-4 text-white" style="padding-top: 15px; font-size: 1.1rem;">
-                            <label for="email">Correo electrónico</label>
-                            <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email" id="email"
-                                placeholder="..." required>
-                    
-                        </div>
-                        <div class="form-group col-sm-4 text-white" style="padding-top: 15px; font-size: 1.1rem;">
-                            <label for="telefono">Teléfono (WhatsApp)</label>
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="telefono" placeholder="..."
-                                id="telefono">
-                    
-                        </div>
-                    
-                        <div class="form-group col-sm-4 text-white" style="padding-top: 15px; font-size: 1.1rem;">
-                            <label for="pais">País y ciudad</label>
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="pais" id="pais"
-                                placeholder="..." required>
-                    
-                        </div>
-                        <div>
-                            <label for="problemas" style="font-size: 1.1rem; padding-top: 10px;" class="text-white">Donde necesitas
-                                apoyo:</label>
-                            <select name="problemas" id="problemas" style="font-size: 1rem; color: black; background-color: white"
-                                class="form-control form-control-sm" required>
-                    
-                                <option value="Adaptarme a un nuevo, pais, cultura, sociedad o ambiente.">Adaptarme a
-                                    un nuevo, país, cultura, sociedad o ambiente.
-                                </option>
-                                <option value="Sobrellevar la perdida personal de un ser querido o ruptura">Sobrellevar
-                                    la perdida personal de un ser querido o ruptura
-                                    de pareja.​</option>
-                                <option value="Manejar el estres de cuidar a los hijos y mantener un hogar.​">Manejar el
-                                    estrés de cuidar a los hijos y mantener un hogar.​
-                                </option>
-                                <option value="Lidiar con problemas laborales, jefes dificiles y crecer
-                                                                                profesionalmente.">Lidiar con problemas laborales, jefes
-                                    difíciles y crecer profesionalmente.</option>
-                                <option value="Mejorar tus relaciones de pareja y familiares.">Mejorar tus relaciones de
-                                    pareja y familiares.​</option>
-                                <option value="Pensar en ti mismo y vivir mas plenamente.">Pensar en ti mismo y vivir más plenamente.​
-                                </option>
-                                <option value="Otros...">Otros...</option>                    
-                            </select>                    
-                        </div>
-                    
-                    
-                        <div class="form-group col-12 text-white" style="padding-top: 15px;">
-                            <label for="mensaje" style="padding-top: 10px;font-size: 1.1rem">Si deseas darnos más detalles sobre lo que te
-                                pasa, hazlo aquí:</label>
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="4"
-                                class="form-control text-white rounded-0 bg-transparent" style="font-size: 1.1rem;"
-                                placeholder="..."></textarea>                    
-                        </div>
-                        <div class="form-group col-12 mb-0">                    
-                            <button type="submit" class="btn btn-primary rounded w-md mt-3"
-                                style="font-size: 1.1rem; margin-bottom: 40px;">Enviar</button>                    
-                        </div>               
-                    
-                    </form>
-                </div>
-                <div class="col-md-5 my-3 text-center" style="padding-top: 35px;">
-                    <h6 style=" color: #f77a54; font-size: 1.2rem; padding-bottom: 10px;"><b>O si prefieres escríbenos a:</b>
-                    </h6>
-                    <h6 class="mb-0" style="color: #f77a54; font-size: 1rem;">WhatsApp</h6>
-                    <a href="https://api.whatsapp.com/send?phone=+540111535965203&text=Hola, Necesito mas informacion!">
-                        <p class="mb-4" style="color: white; font-size: 1.1rem;">+ 54 1135965203</p>
-                    </a>
-
-                    <h6 class="mb-0" style="color: #f77a54; font-size: 1rem;">Email</h6>
-                    <a class="mb-4" href="mailto:contacto@vidacoaches.com" target="_blank"
-                        style="color: white; font-size: 1rem; padding-bottom: 20px;">contacto@vidacoaches.com</a>
-
-                    <p style="color: grey;font-size: 0.9rem;">***</p>
-                    <div style=" padding-bottom: 30px;">
-                        <h6 style="color: #f77a54;font-size: 1.1rem; padding-top: 180px;"><b>Seguinos
-                            en nuestras redes</b></h6>
-                        <a style="padding: 10px;" class="sociales" href="https://www.instagram.com/vidacoaches/"
-                            target="_blank"><img src="imgs/instagram.png"
-                                alt="link para visitarnos en nuestro instagram"></a>
-                        <a style="padding: 30px;" class="sociales"
-                            href="https://www.facebook.com/profile.php?id=100092736528246" target="_blank"><img
-                                src="imgs/facebook.png" alt="link para visitarno en facebook"></a>
-                        <a style="padding: 10px;" class="sociales rounded"
-                            href="https://www.tiktok.com/@vidacoaches?lang=es" target="_blank"><img
-                                src="imgs/tik-tok.png" alt="link para visitarnos en tik tok"></a>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
+   
 
     <!-- Blog Section -->
     <section class="section" id="blog" style="scroll-margin: 40px;">
@@ -716,13 +684,146 @@
     </section>
     <!-- End of Blog Section -->
 
-
-
-
-
-
+     <!-- Contact Section -->
+    <section id="contact" class="section pb-0"
+        style="min-height: 700px; padding-bottom: 50px; scroll-margin: 60px; background: url(imgs/bg.png); background-repeat: no-repeat; background-size: cover;background-position: center;">
+        <div class="container">
+            
+            <div class="row " style="justify-content: space-around">
+                
+    
+                <div class="col-md-6" style=" padding: 40px; margin-bottom: 40px; border-radius: 30px;background: rgba(240, 221, 205, 0.2);
+                box-shadow: 0 8px 32px 0 rgba(135, 78, 31, 0.788);
+                backdrop-filter: blur( 0px );
+                -webkit-backdrop-filter: blur( 0px );
+                border-radius: 10px;">
+    
+                    <form action="enviar.php" method="POST" class="form-row" style="padding-top: 40px;">
+                        
+    
+                        <div class="form-group col-sm-4 text-black" style="padding-top: 15px; font-size: 1.1rem;">
+                            <label for="nombre"><b>Nombre y apellido</b></label>
+                            <input type="text" class="form-control text-white rounded-0 bg-transparent" placeholder="..."
+                                required name="nombre" id="nombre">
+    
+                        </div>
+                        <div class="form-group col-sm-4 text-black" style="padding-top: 15px; font-size: 1.1rem;">
+                            <label for="email"><b>Correo electrónico</b></label>
+                            <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email"
+                                id="email" placeholder="..." required>
+    
+                        </div>
+                        <div class="form-group col-sm-4 text-black" style="padding-top: 15px; font-size: 1.1rem;">
+                            <label for="telefono"><b>Teléfono (WhatsApp)</b></label>
+                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="telefono"
+                                placeholder="..." id="telefono">
+    
+                        </div>
+    
+                        <div class="form-group col-sm-4 text-black" style="padding-top: 15px; font-size: 1.1rem;">
+                            <label for="pais"><b>País y ciudad</b></label>
+                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="pais"
+                                id="pais" placeholder="..." required>
+    
+                        </div>
+                        <div>
+                            <label for="problemas" style="font-size: 1.1rem; padding-top: 10px;" class="text-black"><b>Donde
+                                necesitas
+                                apoyo:</b></label>
+                            <select name="problemas" id="problemas"
+                                style="font-size: 1rem; color: black; background-color: white"
+                                class="form-control form-control-sm" required>
+    
+                                <option value="Adaptarme a un nuevo, pais, cultura, sociedad o ambiente.">Adaptarme a
+                                    un nuevo, país, cultura, sociedad o ambiente.
+                                </option>
+                                <option value="Sobrellevar la perdida personal de un ser querido o ruptura">Sobrellevar
+                                    la perdida personal de un ser querido o ruptura
+                                    de pareja.​</option>
+                                <option value="Manejar el estres de cuidar a los hijos y mantener un hogar.​">Manejar el
+                                    estrés de cuidar a los hijos y mantener un hogar.​
+                                </option>
+                                <option value="Lidiar con problemas laborales, jefes dificiles y crecer
+                                                                                 profesionalmente.">Lidiar con problemas
+                                    laborales, jefes
+                                    difíciles y crecer profesionalmente.</option>
+                                <option value="Mejorar tus relaciones de pareja y familiares.">Mejorar tus relaciones de
+                                    pareja y familiares.​</option>
+                                <option value="Pensar en ti mismo y vivir mas plenamente.">Pensar en ti mismo y vivir más
+                                    plenamente.​
+                                </option>
+                                <option value="Otros...">Otros...</option>
+                            </select>
+                        </div>
+    
+    
+                        <div class="form-group col-12 text-black" style="padding-top: 15px;">
+                           
+                            <label for="mensaje" style="padding-top: 10px;font-size: 1.1rem"><b>Si deseas darnos más detalles
+                                sobre lo que te
+                                pasa, hazlo aquí:</b></label>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="4"
+                                class="form-control text-black rounded-0 bg-transparent" style="font-size: 1.1rem;"
+                                placeholder="..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="nav-link btn btn-primary btn-sm rounded container col-md-6"
+                                style="font-size: 1.1rem; margin-top: 30px;">Enviar</button>
+                        
+    
+                    </form>
+                </div>
+                <div class="col-md-5 my-3 text-center" style="padding-top: 35px;">
+                    <h4 class="mb-4 text-center text-black" style="padding-bottom: 40px;"><b>Llena el formulario y
+                    nos
+                    ponemos en contacto.</b></h4>
+                    <h6 style=" color: #f77a54; font-size: 1.2rem; padding-bottom: 10px;"><b>O si prefieres escríbenos
+                            a:</b>
+                    </h6>
+                    
+                    
+                    <h6 class="mb-0" style="color: #f77a54; font-size: 1rem;"><b>WhatsApp</b></h6>
+                    <a href="https://api.whatsapp.com/send?phone=+540111535965203&text=Hola, Necesito mas informacion!">
+                        <p class="mb-0" style="color: black; font-size: 1.1rem;border-radius:
+                                                    85% 15% 95% 5% / 40% 57% 43% 60%; background-color: #f77a54; padding: 10px;"><b>+ 54
+                                1135965203</b></p>
+                    </a>
+                    
+                    
+                    <h6 class="mb-0" style="color: #f77a54; font-size: 1rem;">Email</h6>
+                    <a class="mb-0" href="mailto:contacto@vidacoaches.com" target="_blank"
+                        style="color: rgba(0, 0, 0, 0.877); font-size: 1.1rem; padding-bottom: 20px;border-radius:
+                                                    85% 15% 95% 5% / 40% 57% 43% 60%; background-color: #f77a54; padding: 10px;"><b>contacto@vidacoaches.com</b></a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <p style="color: grey;font-size: 0.9rem;">***</p>
+                    <div style=" padding-bottom: 30px;">
+                        <h6 style="color: black;font-size: 1.1rem; padding-top: 40px;"><b>Seguinos
+                                en nuestras redes</b></h6>
+                        <a style="padding: 10px;" class="sociales" href="https://www.instagram.com/vidacoaches/"
+                            target="_blank"><img src="imgs/instagram.png"
+                                alt="link para visitarnos en nuestro instagram"></a>
+                        <a style="padding: 20px;" class="sociales"
+                            href="https://www.facebook.com/profile.php?id=100092736528246" target="_blank"><img
+                                src="imgs/facebook.png" alt="link para visitarno en facebook"></a>
+                        <a style="padding: 10px;" class="sociales rounded" href="https://www.tiktok.com/@vidacoaches?lang=es"
+                            target="_blank"><img src="imgs/tik-tok.png" alt="link para visitarnos en tik tok"></a>
+                        <a style="padding: 10px;" class="sociales rounded" href="https://www.tiktok.com/@vidacoaches?lang=es"
+                            target="_blank"><img src="imgs/linkedin (3).png" alt="link para visitarnos en tik tok"></a>
+                        </div>
+    
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
     <!-- Page Footer -->
-    <footer class="mt-5 py-4 border-top border-secondary text-center" style="background-color: black; color: white;">
+    <footer class=" py-4 border-top border-secondary text-center" style="background-color: black; color: white;">
         <p class="mb-0 small"> Copyright &copy;
             <script>document.write(new Date().getFullYear())</script>, Vida coaches. Designed By <a
                 href="https://github.com/Giselarioss" target="_blank">GR.</a> All rights reserved
@@ -742,6 +843,10 @@
 
     <!-- LeadMark js -->
     <script src="js/leadmark.js"></script>
+
+    
+    
+
 
 </body>
 

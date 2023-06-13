@@ -10103,7 +10103,7 @@ textarea.form-control {
 .header {
   position: relative;
   height: 100vh;
-  min-height: 500px;
+  min-height: 1000px;
   background: url(../imgs/header.jpg) no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
@@ -10671,5 +10671,246 @@ textarea.form-control {
   font-weight: 500;
   opacity: 1;
 }
+
+
+
+.contenedor-formulario{
+  position: relative;
+  margin: 30px auto;/*CENTRA EL FORMULARIO DE FORMA HORIZONTAL Y DA UN MARGEN SUPERIOR E INFERORO DE 30 PX*/
+  width: 400px;/*DA UN ANCHO FIJO DE 400PX AL CONTENEDOR DEL FORMULARIO*/
+  border-radius: 30px;
+  border: white solid 3px;  
+  background-color: rgba(46, 45, 45, 0.555);
+  
+}
+
+.forms{ 
+  text-align:center;/*ALINEANDO TODOS LOS ELEMENTOS AL CENTRO DEL FORMULARIO*/
+}
+
+.campo-texto{
+  width: 300px;/*TAMAÑO DEL INPUT */
+  height: 25px;/*ALTURA DEL INPUT*/
+  padding: 10px;/*ESPACIO QUE DEJA ENTRE EL BORDE DEL INPUT Y LA LETRA ESCRITA DENTRO DEL INPUT*/
+  padding-left: 50px;/*ESPACIO QUE SE DA AL LADO IZQUIERDO*/
+  margin-top: 20px;/*MARGEN SUPERIOR CON RESPECTO DEL ELEMENTO QUE SE ENCUENTRE POR ENCIMA*/
+  font-weight: bolder;/*NEGRITAS*/
+  text-align:left;/*ALINEACION DEL TEXTO*/
+  border-radius: 5px;
+  border: none;
+  background:rgba(10,10,10,0.5);
+  font-weight: bolder;
+  color: white;
+  box-shadow: 0 0 1px;
+}
+
+
+
+
+
+
+a{
+  text-decoration: none;
+  margin-top: 22px;
+  display:inline-block;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+
+
+
+.campo-texto:focus{
+  outline: none;
+  box-shadow: 0 0 5px white;
+}
+
+::-webkit-input-placeholder{
+  color: white;
+}
+
+
+.submit{
+  border-radius: 5px;
+  border: none;
+  background:linear-gradient(#1f2,green);
+  color: white;
+  box-shadow: 0 0 1px black;
+}
+
+
+
+a{
+  color: white;
+  margin-bottom:15px;
+}
+
+#nombres{
+  background-repeat:no-repeat;
+  background-position:10px 50%;
+  background-size:25px 25px;
+  background-image: url(/imgs/persona.png)
+}
+
+#telefonos{
+  background-repeat:no-repeat;
+  background-position:10px 50%;
+  background-size:25px 25px;
+  background-image: url(/imgs/telefono.png)
+    
+}
+
+#paiss{
+  background-repeat:no-repeat;
+  background-position:10px 50%;
+  background-size:25px 25px;
+  background-image: url(/imgs/mundo.png);
+  
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contenedor-redes-sociales {
+  margin: 20px 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenedor-redes-sociales a {
+  position: relative;
+  display: inline-block;
+  height: 36px;
+  width: 160px;
+  line-height: 35px;
+  padding: 0;
+  color: #fff;
+  border-radius: 50px;
+  background: #fff;
+  margin: 5px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+}
+
+.contenedor-redes-sociales a:hover span.circulo {
+  left: 100%;
+  margin-left: -35px;
+  background: #fff;
+}
+
+.contenedor-redes-sociales a:hover span.titulo {
+  opacity: 0;
+}
+
+.contenedor-redes-sociales a:hover span.titulo-hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.contenedor-redes-sociales a span.titulo-hover {
+  opacity: 0;
+}
+
+.contenedor-redes-sociales a span.circulo {
+  display: block;
+  color: #fff;
+  position: absolute;
+  float: left;
+  margin: 3px;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+  border-radius: 50%;
+}
+
+.contenedor-redes-sociales a span.circulo i {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.contenedor-redes-sociales a span.titulo, .contenedor-redes-sociales a span.titulo-hover {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 400;
+  transition: .5s;
+}
+
+.contenedor-redes-sociales a span.titulo {
+  right: 15px
+}
+
+.contenedor-redes-sociales a span.titulo-hover {
+  left: 15px
+}
+
+
+/*----------Colores de los botones----------*/
+
+.contenedor-redes-sociales .facebook {
+  border: 2px solid #3b5998;
+}
+
+.contenedor-redes-sociales .facebook:hover, .contenedor-redes-sociales .facebook span.circulo {
+  background: #3b5998;
+}
+
+.contenedor-redes-sociales .facebook:hover span.circulo, .contenedor-redes-sociales .facebook span.titulo {
+  color: #3b5998;
+}
+
+.contenedor-redes-sociales .twitter {
+  border: 2px solid #1da1f2;
+}
+
+.contenedor-redes-sociales .twitter:hover, .contenedor-redes-sociales .twitter span.circulo {
+  background: #1da1f2;
+}
+
+.contenedor-redes-sociales .twitter:hover span.circulo, .contenedor-redes-sociales .twitter span.titulo {
+  color: #1da1f2;
+}
+
+.contenedor-redes-sociales .gplus {
+  border: 2px solid #dd4b39;
+}
+
+.contenedor-redes-sociales .gplus:hover, .contenedor-redes-sociales .gplus span.circulo {
+  background: #dd4b39;
+}
+
+.contenedor-redes-sociales .gplus:hover span.circulo, .contenedor-redes-sociales .gplus span.titulo {
+  color: #dd4b39;
+}
+
+
+/*--------------Mediaqueries--------------*/
+
+@media screen and (max-width: 480px) {
+  .contenedor-redes-sociales a {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 10px;
+  }
+}
+
+
+#emails{
+  background-repeat:no-repeat;
+  background-position:10px 50%;
+  background-size:25px 25px;
+  background-image: url(/imgs/mail.png);
+
+}
+
 
 /*# sourceMappingURL=leadmark.css.map */

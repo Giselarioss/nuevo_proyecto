@@ -30,7 +30,7 @@ $mensaje .= " Necesita apoyo en: ". $problemas . "\r\n";
 $mensaje .= "Mensaje: ". $_POST['mensaje'] . "\r\n";
 $mensaje .= "Enviado el: ". date('d/m/Y', time());
 
-$para = 'gisee_rios@hotmail.com';
+$para = 'contacto@vidacoaches.com';
 $asunto = 'Mensaje de Vida coach';
 
 // funcion mail
