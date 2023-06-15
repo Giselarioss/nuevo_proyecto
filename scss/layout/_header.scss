@@ -5,6 +5,10 @@
     background: url(../imgs/header.jpg) no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;
+    @media (max-width: 991.98px) {
+        min-height: 1400px;
+    }
+
     
 
     .overlay {
@@ -19,6 +23,7 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        
 
         .subtitle {
             font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1200 - 320)));

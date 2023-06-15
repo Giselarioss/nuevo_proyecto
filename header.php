@@ -8,7 +8,7 @@ $reply_to_email          = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
 $telefono                = filter_var($_POST['telefono'], FILTER_SANITIZE_STRING);
 $pais                    = filter_var($_POST['pais'], FILTER_SANITIZE_STRING);
 $problemas               = filter_var($_POST ['problemas'], FILTER_SANITIZE_STRING);
-$mensaje                 = filter_var( $_POST['mensaje'], FILTER_SANITIZE_STRING);
+
 
 $boundary                = md5("pera");
 
@@ -27,7 +27,6 @@ $mensaje .= "Su mail es: ". $_POST['email'] . "\r\n";
 $mensaje .= "Telefono de contacto: ". $telefono . "\r\n";
 $mensaje .= "Pais: ". $pais . "\r\n";
 $mensaje .= " Necesita apoyo en: ". $problemas . "\r\n";
-$mensaje .= "Mensaje: ". $_POST['mensaje'] . "\r\n";
 $mensaje .= "Enviado el: ". date('d/m/Y', time());
 
 $para = 'gisee_rios@hotmail.com';
