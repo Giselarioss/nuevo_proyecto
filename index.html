@@ -13,6 +13,7 @@
     </script>
     <!-- End Google Tag Manager -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <meta name="theme-color" content="#478ac9">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -72,10 +73,7 @@
                         <a class="nav-link"  href="#blog">Blog</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="#contact" class="ml-4 nav-link btn btn-primary btn-sm rounded"
-                            >Empecemos</a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -83,26 +81,25 @@
     <!-- End Of Second Navigation -->
 
     <!-- Page Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="overlay" >
             <div class="row section text-center" >
                 <div class="col-md-6 pr-md-5 mb-4 mb-md-0 text-center">
                     <h1 class="subtitle mb-3" style="padding-top: 50px;">Si cuidas tu cuerpo, tambien cuida tu mente</h1>
                     <h2 class="title text-center" style="font-size: 2.5rem; padding-top: 60px;">¿Te sientes mal?</h2>
                     <div style="padding: 20px 20px 0 20px;">
-                        <p style="font-size: 0.9rem; letter-spacing: 3px;" class="text-center">Potencia y crece con nuestro sevicio
-                            personalizado. </p>
-                        <p style="font-size: 0.9rem; letter-spacing: 3px;" class="text-center">Te ayudamos a cuidar tu mente y
-                            afrontar problemas. Todo de manera virtual, en tu idioma
-                            y
-                            flexibles a tus tiempos</p>
+                        <p style="font-size: 1rem; letter-spacing: 3px;" class="text-center">Te ayudamos a cuidar tu mente y afrontar los problemas de una mejor manera.</p>
+                        <p style="font-size: 1rem; letter-spacing: 3px;" class="text-center"> Todo de manera virtual, en horarios flexibles, en tu propio idioma y con coaches que conocen tu cultura.
+                            </p>
             
                     </div>
                 </div>
                 <div class="col-md-6 pl-md-5">                               
-                    <div class="contenedor-formulario" style="text-align:center;padding:10px;">            
+                    <div class="contenedor-formulario" style="text-align:center;padding:10px;" data-aos="zoom-in"
+                    data-aos-offset="400"
+                    data-aos-easing="ease-in-sine">            
                         <h6 style="font-size: 1.3rem; padding-top: 5px;">Escribenos para ayudarte</h6>            
-                        <form action="header.php" method="POST" class="forms">
+                        <form  class="forms" id="form">
                             <input class="campo-texto" id="nombres" type="text" name="nombre" placeholder="Nombre y Apellido"
                                 maxlength="20" required="" />
                             <input class="campo-texto" id="emails" type="email" name="email" placeholder="Su email" maxlength="50"
@@ -139,10 +136,15 @@
                                 </select>
                             </div>                            
                             
-                            <button type="submit" class="btn btn-primary rounded w-md mt-3" 
-                                style="font-size: 1.1rem; margin-bottom: 10px; background-color: #f77a54;">Enviar</button>                          
+                            <input type="submit" class="btn btn-primary rounded w-md mt-3" id="button" value="Enviar"
+                                style="font-size: 1.1rem; margin-bottom: 10px; background-color: #f77a54;">                          
                                 
-                        </form>  
+                        </form>
+                        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                        
+                        <script type="text/javascript">
+                            emailjs.init('8F6I4yet9mFmtzJ9P')
+                        </script>
                         <a href="https://api.whatsapp.com/send?phone=+543515723749&text=Hola!me gustaria recibir mas informacion sobre Vida Coaches!" style="text-decoration: none;">
                         
                             <p class="mb-0" style="color: white; font-size: 1.1rem;"><b> WhatsApp: + 54
@@ -150,7 +152,7 @@
                     </div>           
                 </div>           
             </div>
-            <a href="https://api.whatsapp.com/send?phone=+543515723749&text=Hola!me gustaria recibir mas informacion sobre Vida Coaches!" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+            <a style="color: white;" href="https://api.whatsapp.com/send?phone=+543515723749&text=Hola!me gustaria recibir mas informacion sobre Vida Coaches!" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
 
         </div>
@@ -172,12 +174,10 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
-                    <h3 class="section-title mb-0">Como funciona?</h3>
+                    <h3 class="section-title mb-0" style="font-size: 2rem; padding-bottom: 20px;">¿Cómo funciona?</h3>
                 
-                    <p style="font-size: 1rem;">En Vida Coaches te ayudamos a cuidar tu mente, a afrontar los problemas de una mejor
-                        manera y a ser tú mismo bajo cualquier situación.</p>
-                    <p style="font-size: 1.1rem;"><b>Lo hacemos en tu idioma y con coaches que te entienden. Todo de manera virtual y
-                            flexible a tus tiempos​</b></p>
+                    <p style="font-size: 1rem;">Cuéntanos donde necesitas ayuda, elige el plan que mejor se acomode y te ponemos en contacto con un coach que te pueda ayudar. </p>
+                    <p style="font-size: 1.1rem;"><b>Las sesiones son virtuales y en español. Es rápido y sencillo.​</b></p>
                 
                     
                     <img src="imgs/about.jpg"
@@ -185,7 +185,7 @@
                         class="w-100 mt-3 shadow-sm">
                 </div>
                 <div class="col-md-6 pl-md-5">
-                    <div class="row" style="padding-top: 60px;">
+                    <div class="row" style="padding-top: 50px;">
                         <div class="col-6">
                             <img src="imgs/about-2.jpg" alt="hombre tomando un break laboral y conectandose con su coach de manera virtual" class="w-100 shadow-sm">
                         </div>
@@ -206,7 +206,7 @@
                     </div>
 
                 </div>
-                <button class=" nav-link btn btn-primary btn-sm rounded container col-md-3" style="font-size: 1rem; margin-top: 40px;"><a style="margin: 5px; color: white; text-decoration: none;" class="text-center" href="#contact">Empecemos</a></button>
+                <button class=" nav-link btn btn-primary btn-sm rounded container col-md-3" style="font-size: 1rem; margin-top: 40px;"><a style="margin: 5px; color: white; text-decoration: none;" class="text-center" href="#header">Empecemos</a></button>
             </div>              
         </div>
     </section>
@@ -220,7 +220,7 @@
         <div class="container">
             <h6 class="section-title text-center" style="padding-bottom: 60px; padding-top: 70px; font-size: 1.3rem; ">
                 Desde<b style="color: orangered;"> Vida Coaches</b> te ayudamos a:</h6>
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-md-4 mb-4">
                     <div class="card mb-4 mb-md-0 card-servicios"
                         style="box-shadow: 0 8px 15px 0 rgba(69, 71, 87, 0.226);">
@@ -291,7 +291,7 @@
             <h6 class="section-title text-center mb-0" style="font-size: 1.5rem;">No estas solo,</h6>
             <p class="section-title text-center mb-0" style="font-size: 1rem; padding-bottom: 50px;">escucha un poco
                 más sobre quienes han pasado por algo parecido…</p>
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-md-4 my-3 my-md-0" style="padding-bottom: 30px;">
                     <div class="card h-100 card_new">
                         <div class="card-body card_test">
@@ -386,7 +386,7 @@
                 </div>
             </div>
         </div>
-        <button class=" nav-link btn btn-primary btn-sm rounded container col-md-3" style="font-size: 1rem; margin-top: 40px;"><a style="margin: 5px; color: white; text-decoration: none;" href="#contact">Empecemos</a></button>
+        <button class=" nav-link btn btn-primary btn-sm rounded container col-md-3" style="font-size: 1rem; margin-top: 40px;"><a style="margin: 5px; color: white; text-decoration: none;" href="#header">Empecemos</a></button>
 
     </section>
     <!-- the end section testimonial-->
@@ -442,7 +442,7 @@
             <p class="text-center" style=" font-size: 1.1rem">Nuestro objetivo es poder ayudar de una manera sencilla y económica. Elige el plan que mejor se te acomode.</p>
             <p style=" font-size: 1rem" class="text-center"><b> Sesiones virtuales vía Zoom u otras plataformas de videollamadas dependiendo del coach. </b></p>
             
-            <div class="portfolio-container text-center" style="margin-top: 50px;">                
+            <div class="portfolio-container text-center" style="margin-top: 50px;" data-aos="fade-up">                
                 <div class="col-md-6 col-lg-4 new" id="tarifa1">
                     <div class="portfolio-item">
                         <img src="imgs/web-1.jpg" class="img-fluid"
@@ -494,7 +494,7 @@
                 <!---------------------------------fin de tarifas sin filtros ---------------------------------------->
             
             </div>
-            <button class=" nav-link btn btn-primary btn-sm rounded container col-md-3" style="font-size: 1rem; margin-top: 40px;"><a style="margin: 5px; color: white; text-decoration: none;" href="#contact">Quiero una consulta</a></button>
+            <button class=" nav-link btn btn-primary btn-sm rounded container col-md-3" style="font-size: 1rem; margin-top: 40px;"><a style="margin: 5px; color: white; text-decoration: none;" href="#header">Quiero una consulta</a></button>
         </div>
 
     </section>
@@ -510,8 +510,8 @@
             <h6 class="section-title mb-0 text-center" style="padding-bottom: 70px; font-size: 1.5rem;">Blog Vida
                 Coaches</h6>
 
-            <div class="row text-center">
-                <div class="col-md-4">
+            <div class="row text-center" data-aos="fade-up">
+                <div class="col-md-4" >
                     <div class="card border-0 mb-4 h-100"
                         style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">
                         <div class="card-body">
@@ -691,98 +691,14 @@
 
      <!-- Contact Section -->
     <section id="contact" class="section pb-0"
-        style="min-height: 700px; padding-bottom: 50px; scroll-margin: 60px; background: url(imgs/bg.png); background-repeat: no-repeat; background-size: cover;background-position: center;">
+        style="min-height: 500px; scroll-margin: 60px; background: url(imgs/bg.png); background-repeat: no-repeat; background-size: cover;background-position: center;">
         <div class="container">
             
             <div class="row " style="justify-content: space-around">
-                <h4 class="mb-4 text-center text-black" style="padding-bottom: 40px;"><b>Llena el formulario y
-                    nos
-                    ponemos en contacto.</b></h4>                
-    
-                <div class="col-md-6" style=" padding: 40px; margin-bottom: 40px; border-radius: 30px;background: rgba(240, 221, 205, 0.2);
-                box-shadow: 0 8px 32px 0 rgba(135, 78, 31, 0.788);
-                backdrop-filter: blur( 0px );
-                -webkit-backdrop-filter: blur( 0px );
-                border-radius: 10px;">
-                    
-                    <form action="enviar.php" method="POST" class="form-row" style="padding-top: 40px;">
-                        
-    
-                        <div class="form-group col-sm-4 text-black" style="padding-top: 15px; font-size: 1.1rem;">
-                            <label for="nombre"><b>Nombre y apellido</b></label>
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" placeholder="..."
-                                required name="nombre" id="nombre">
-    
-                        </div>
-                        <div class="form-group col-sm-4 text-black" style="padding-top: 15px; font-size: 1.1rem;">
-                            <label for="email"><b>Correo electrónico</b></label>
-                            <input type="email" class="form-control text-white rounded-0 bg-transparent" name="email"
-                                id="email" placeholder="..." required>
-    
-                        </div>
-                        <div class="form-group col-sm-4 text-black" style="padding-top: 15px; font-size: 1.1rem;">
-                            <label for="telefono"><b>Teléfono (WhatsApp)</b></label>
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="telefono"
-                                placeholder="..." id="telefono">
-    
-                        </div>
-    
-                        <div class="form-group col-sm-4 text-black" style="padding-top: 15px; font-size: 1.1rem;">
-                            <label for="pais"><b>País y ciudad</b></label>
-                            <input type="text" class="form-control text-white rounded-0 bg-transparent" name="pais"
-                                id="pais" placeholder="..." required>
-    
-                        </div>
-                        <div>
-                            <label for="problemas" style="font-size: 1.1rem; padding-top: 10px;" class="text-black"><b>Donde
-                                necesitas
-                                apoyo:</b></label>
-                            <select name="problemas" id="problemas"
-                                style="font-size: 1rem; color: black; background-color: white"
-                                class="form-control form-control-sm" required>
-    
-                                <option value="Adaptarme a un nuevo, pais, cultura, sociedad o ambiente.">Adaptarme a
-                                    un nuevo, país, cultura, sociedad o ambiente.
-                                </option>
-                                <option value="Sobrellevar la perdida personal de un ser querido o ruptura">Sobrellevar
-                                    la perdida personal de un ser querido o ruptura
-                                    de pareja.​</option>
-                                <option value="Manejar el estres de cuidar a los hijos y mantener un hogar.​">Manejar el
-                                    estrés de cuidar a los hijos y mantener un hogar.​
-                                </option>
-                                <option value="Lidiar con problemas laborales, jefes dificiles y crecer
-                                                                                 profesionalmente.">Lidiar con problemas
-                                    laborales, jefes
-                                    difíciles y crecer profesionalmente.</option>
-                                <option value="Mejorar tus relaciones de pareja y familiares.">Mejorar tus relaciones de
-                                    pareja y familiares.​</option>
-                                <option value="Pensar en ti mismo y vivir mas plenamente.">Pensar en ti mismo y vivir más
-                                    plenamente.​
-                                </option>
-                                <option value="Otros...">Otros...</option>
-                            </select>
-                        </div>
-    
-    
-                        <div class="form-group col-12 text-black" style="padding-top: 15px;">
-                           
-                            <label for="mensaje" style="padding-top: 10px;font-size: 1.1rem"><b>Si deseas darnos más detalles
-                                sobre lo que te
-                                pasa, hazlo aquí:</b></label>
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="4"
-                                class="form-control text-black rounded-0 bg-transparent" style="font-size: 1.1rem;"
-                                placeholder="..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="nav-link btn btn-primary btn-sm rounded container col-md-6"
-                                style="font-size: 1.1rem; margin-top: 30px;">Enviar</button>
-                        
-    
-                    </form>
-                </div>
-                <div class="col-md-5 my-3 text-center" style="padding-top: 35px;">
-                    <div style=" padding-bottom: 30px;">
-                        <h6 style="color: black;font-size: 1.1rem; padding-top: 80px;"><b>Seguinos
+                
+                <div class="col-md-5 my-3 text-center">
+                    <div >
+                        <h6 style="color: black;font-size: 1.1rem;"><b>Seguinos
                                 en nuestras redes</b></h6>
                         <a style="padding: 10px;" class="sociales" href="https://www.instagram.com/vidacoaches/"
                             target="_blank"><img src="imgs/instagram.png"
@@ -796,14 +712,14 @@
                             target="_blank"><img src="imgs/linkedin (3).png" alt="link para visitarnos en tik tok"></a>
                     </div>
 
-                    <p style="color: grey;font-size: 0.9rem; padding-top:40px ;">***</p>
+                    <p style="color: grey;font-size: 0.9rem;">***</p>
 
-                    <h6 style=" color: black; font-size: 1.2rem; padding-bottom: 10px; padding-top: 50px;border-radius:
+                    <h6 style=" color: black; font-size: 1.2rem; padding-bottom: 10px;border-radius:
                     85% 15% 95% 5% / 40% 57% 43% 60%; background-color: rgb(241, 240, 240); padding: 10px;"><b>Escríbenos a:</b>
                     </h6>       
 
                     <a class="mb-0" href="mailto:contacto@vidacoaches.com" target="_blank"
-                        style="color: rgba(0, 0, 0, 0.877); font-size: 1.1rem; margin-top: 40px;border-radius:
+                        style="color: rgba(0, 0, 0, 0.877); font-size: 1.1rem;border-radius:
                                                     85% 15% 95% 5% / 40% 57% 43% 60%; background-color: #f77a54; padding: 10px;"><b>contacto@vidacoaches.com</b></a>
                     
                     
@@ -835,6 +751,14 @@
 
     <!-- LeadMark js -->
     <script src="js/leadmark.js"></script>
+
+    <script src ="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
     
     

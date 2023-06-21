@@ -42,3 +42,26 @@ $(window).on("load", function() {
     })
 })
 
+// formulario emailjs
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Enviando...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_xwtog37';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Enviar';
+                swal("¡ Gracias por tu mensaje! ", " ...Recuerda fijarte en tu casilla de entrada de Email o Spam.")
+
+            }, (err) => {
+                btn.value = 'Enviar';
+                alert(JSON.stringify(err));
+            });
+    });
+
