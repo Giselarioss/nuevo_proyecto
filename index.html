@@ -37,7 +37,15 @@
     <link rel="stylesheet" href="css/leadmark.css">
     <title>Vida Coaches | Si cuidas tu cuerpo, tambien cuida tu mente.</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6NQD73KXTW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-6NQD73KXTW');
+</script>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
     <!-- Google Tag Manager (noscript) -->
@@ -67,7 +75,7 @@
                         <a class="nav-link"  href="#coaches">Coaches</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="#portfolio">Tarifas</a>
+                        <a class="nav-link"  href="#tarifas">Tarifas</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"  href="#blog">Blog</a>
@@ -95,11 +103,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 pl-md-5">                               
-                    <div class="contenedor-formulario" style="text-align:center;padding:10px;" data-aos="zoom-in"
-                    data-aos-offset="400"
-                    data-aos-easing="ease-in-sine">            
+                    <div class="contenedor-formulario" style="text-align:center;padding:10px;">            
                         <h6 style="font-size: 1.3rem; padding-top: 5px;">Escribenos para ayudarte</h6>            
-                        <form  class="forms" id="form">
+                        <form  class="forms" id="form" style="scroll-margin: 190px;">
                             <input class="campo-texto" id="nombres" type="text" name="nombre" placeholder="Nombre y Apellido"
                                 maxlength="20" required="" />
                             <input class="campo-texto" id="emails" type="email" name="email" placeholder="Su email" maxlength="50"
@@ -152,7 +158,7 @@
                     </div>           
                 </div>           
             </div>
-            <a style="color: white;" href="https://api.whatsapp.com/send?phone=+543515723749&text=Hola!me gustaria recibir mas informacion sobre Vida Coaches!" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+            <a style="color: white;" href="https://api.whatsapp.com/send?phone=+543515723749&text=Hola!me gustaria recibir mas informacion sobre... (completa con tu duda o consulta)" class="whatsapp" target="_blank"><i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
 
         </div>
@@ -197,16 +203,10 @@
                                 amigos o país. </p>
                             <p style="font-size: 1rem;">Tal vez una pérdida de un ser querido, problemas con tu pareja, dificultades en el trabajo. </p>    
                             <p style="font-size: 1rem; padding-top: 40px;" ><b>Si cuidamos nuestro cuerpo tratando de comer sano, visitando al doctor o haciendo ejercicios, de la misma manera tenemos que cuidar nuestra mente.</b></p>    
-                        </div>
-                        
-                        
-                        
-                        
-                        
+                        </div>                  
                     </div>
-
                 </div>
-                <button class=" nav-link btn btn-primary btn-sm rounded container col-md-3" style="font-size: 1rem; margin-top: 40px;"><a style="margin: 5px; color: white; text-decoration: none;" class="text-center" href="#header">Empecemos</a></button>
+                <a class=" nav-link btn btn-primary btn-sm rounded container col-md-3 text-center" style="font-size: 1rem; margin-top: 40px; color: white; text-decoration: none;" href="#form">Empecemos</a>
             </div>              
         </div>
     </section>
@@ -386,7 +386,7 @@
                 </div>
             </div>
         </div>
-        <button class=" nav-link btn btn-primary btn-sm rounded container col-md-3" style="font-size: 1rem; margin-top: 40px;"><a style="margin: 5px; color: white; text-decoration: none;" href="#header">Empecemos</a></button>
+        <a class=" nav-link btn btn-primary btn-sm rounded container col-md-3 text-center" style="font-size: 1rem; margin-top: 40px; color: white; text-decoration: none;" href="#form">Empecemos</a>
 
     </section>
     <!-- the end section testimonial-->
@@ -428,14 +428,14 @@
             </div>
         </div>
         <div style="padding-top: 50px" class="text-center">
-            <p style="padding-bottom: 16px; font-size: 0.9rem;">Buscamos coaches, únete a la red de <b> Vida Coach: </b><a href="problemas.html" style="color: #f77a54; text-decoration: none;"><b> Sumate a nosotros</b></a></p>
+            <p style="padding-bottom: 16px; font-size: 0.9rem;">Buscamos coaches, únete a la red de <b> Vida Coach: </b><a href="coaches.html" style="color: #f77a54; text-decoration: none;"><b> Sumate a nosotros</b></a></p>
         </div>
     </section>
     <!-- End OF Service Section -->
 
 
    <!---------------Inicio de tarifas-------------------->
-    <section id="portfolio" class="section portfolio-section"
+    <section id="tarifas" class="section portfolio-section"
         style="scroll-margin: 60px; background-color: rgba(225, 220, 245, 0.185);">
         <div class="container">
             <h6 class="section-title text-center">Tarifas</h6>
@@ -450,10 +450,10 @@
                         <div class="content-holder" >
                             <img class="img-popup" href="imgs/web-1.png">
                             <div class="text-holder">
-                                <h6 class="title" style="font-size: 1.5rem;">Plan 1</h6>
-                                <p class="subtitle" style="font-size: 1.2rem;"> 1 sesión</p>
-                                <p class="subtitle" style="font-size: 1.2rem;"> ( 50 minutos ) </p>                                                             
-                                <p class="subtitle" style="font-size: 1.1rem;"> US$ 35 </p>
+                                <h6 class="title" style="font-size: 1.4rem;">Plan 1</h6>
+                                <p class="subtitle" style="font-size: 1.1rem;"> 1 sesión</p>
+                                <p class="subtitle" style="font-size: 0.9rem;"> ( 50 minutos ) </p>                                                             
+                                <p class="subtitle" style="font-size: 1.1rem;"> US$ 35 por sesión</p>
                                 <br>
                                 <br>
                             </div>
@@ -467,11 +467,11 @@
                         <div class="content-holder">
                             <img class="img-popup" href="imgs/web-11.png">
                             <div class="text-holder">
-                                <h6 class="title" style="font-size: 1.5rem;">Plan 2</h6>
-                                <p class="subtitle" style="font-size: 1.2rem;"> 4 Sesiones</p>
-                                <p class="subtitle" style="font-size: 1.2rem;"> ( 200 minutos ) </p>
-                                <p class="subtitle" style="font-size: 1.3rem;"> US$ 125 </p>
-                                <p class="subtitle" style="font-size: 1.1rem;"> - US$ 31 por sesion - </p>
+                                <h6 class="title" style="font-size: 1.4rem;">Plan 2</h6>
+                                <p class="subtitle" style="font-size: 1.1rem;"> 4 Sesiones</p>
+                                <p class="subtitle" style="font-size: 0.9rem;"> ( 200 minutos ) </p>
+                                <p class="subtitle" style="font-size: 1.1rem;"> US$ 31 por sesión</p>
+                                <p class="subtitle" style="font-size: 1rem;"> - US$ 125 Total - </p>
                             </div>
                         </div>
                     </div>
@@ -482,11 +482,11 @@
                         <div class="content-holder">
                             <img class="img-popup" href="imgs/web-111.jpg">
                             <div class="text-holder">
-                                <h6 class="title" style="font-size: 1.5rem;">Plan 3</h6>
-                                <p class="subtitle" style="font-size: 1.2rem;"> 8 Sesiones</p>
-                                <p class="subtitle" style="font-size: 1.2rem;"> ( 400 minutos ) </p>
-                                <p class="subtitle" style="font-size: 1.3rem;"> US$ 235 </p>
-                                <p class="subtitle" style="font-size: 1.1rem;"> - US$ 29 por sesion - </p>
+                                <h6 class="title" style="font-size: 1.4rem;">Plan 3</h6>
+                                <p class="subtitle" style="font-size: 1.1rem;"> 8 Sesiones</p>
+                                <p class="subtitle" style="font-size: 0.9rem;"> ( 400 minutos ) </p>
+                                <p class="subtitle" style="font-size: 1.1rem;"> US$ 29 por sesión</p>
+                                <p class="subtitle" style="font-size: 1rem;"> - US$ 235 Total -</p>
                             </div>
                         </div>
                     </div>
@@ -494,7 +494,7 @@
                 <!---------------------------------fin de tarifas sin filtros ---------------------------------------->
             
             </div>
-            <button class=" nav-link btn btn-primary btn-sm rounded container col-md-3" style="font-size: 1rem; margin-top: 40px;"><a style="margin: 5px; color: white; text-decoration: none;" href="#header">Quiero una consulta</a></button>
+            <a class=" nav-link btn btn-primary btn-sm rounded container col-md-3 text-center" style="font-size: 1rem; margin-top: 40px; color: white; text-decoration: none;" href="#form">Quiero una consulta</a>
         </div>
 
     </section>
@@ -510,7 +510,7 @@
             <h6 class="section-title mb-0 text-center" style="padding-bottom: 70px; font-size: 1.5rem;">Blog Vida
                 Coaches</h6>
 
-            <div class="row text-center" data-aos="fade-up">
+            <div class="row text-center" style="justify-content: center; align-items: center">
                 <div class="col-md-4" >
                     <div class="card border-0 mb-4 h-100"
                         style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">
@@ -522,7 +522,7 @@
                             <p>de dejar nuestro hogar</p>
                         </div>
                         <a onclick="window.modal1.showModal();"
-                            style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px;"><b> - Ir al articulo
+                            style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px; cursor: pointer;"><b> - Ir al articulo
                                 -</b></a>
                     </div>
                     <dialog id="modal1" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
@@ -560,7 +560,7 @@
                             desafíos, brindando apoyo y recursos adecuados para ayudar a los migrantes a sanar y
                             adaptarse a su nuevo entorno. En Vida Coaches estamos para ayudarte a reconectar, manejar la
                             transición, adaptarte y seguir adelante.<a href="#header"
-                                style="font-size: 1.1rem; color: orangered;font-weight: bolder;"
+                                style="font-size: 1.1rem; color: orangered;font-weight: bolder; cursor: pointer; text-decoration: none;"
                                 onclick="window.modal1.close();"> Empecemos!</a></p>
 
                         <a href="#blog" class="btn btn-primary btn-sm rounded"
@@ -578,8 +578,8 @@
                             <h6 class="card-title">Encontrando el equilibrio con tu pareja.</h5>
                                 <p>Relaciones de parejas con hijos</p>
                         </div>
-                        <a onclick="window.modal1.showModal();"
-                            style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px;"><b> - Ir al articulo
+                        <a onclick="window.modal2.showModal();"
+                            style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px; cursor: pointer;"><b> - Ir al articulo
                                 -</b></a>
                     </div>
                     <dialog id="modal2" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
@@ -616,7 +616,7 @@
                             No hay que presionarse, a veces un poco de espacio y paciencia ayuda. Buscar ayuda
                             profesional, como terapia de pareja, puede ser beneficioso para abordar los desafíos y
                             fortalecer la conexión emocional. En Vida Coaches podemos ayudarte a ti y tu pareja.<a
-                                href="#header" style="font-size: 1.1rem; color: orangered;font-weight: bolder;"
+                                href="#form" style="font-size: 1.1rem; color: orangered;font-weight: bolder; text-decoration: none;"
                                 onclick="window.modal2.close();"> Empecemos!</a></p>
 
                         <a href="#blog" class="btn btn-primary btn-sm rounded"
@@ -634,8 +634,8 @@
                             <p>El mundo laboral y sus obligaciones.</p>
 
                         </div>
-                        <a onclick="window.modal1.showModal();"
-                            style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px;"><b> - Ir al articulo
+                        <a onclick="window.modal3.showModal();"
+                            style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px;cursor: pointer;"><b> - Ir al articulo
                                 -</b></a>
                     </div>
                     <dialog id="modal3" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
@@ -676,12 +676,77 @@
                             el perfeccionismo, la comparación y la falta de equilibrio, podemos tomar medidas para
                             enfrentarlos con valentía. Recordemos que somos seres humanos con limitaciones y que nuestro
                             bienestar y felicidad están por encima de cualquier expectativa laboral. Solos no es fácil,
-                            en Vida Coaches podemos ayudarte.<a href="#header"
-                                style="font-size: 1.1rem; color: orangered;font-weight: bolder;"
+                            en Vida Coaches podemos ayudarte.<a href="#form"
+                                style="font-size: 1.1rem; color: orangered;font-weight: bolder; text-decoration: none;"
                                 onclick="window.modal3.close();"> Empecemos!</a></p>
 
                         <a href="#blog" class="btn btn-primary btn-sm rounded"
                             onclick="window.modal3.close();">Volver</a>
+                    </dialog>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 mb-4 h-100"
+                        style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">
+                        <div class="card-body">
+                            <img src="imgs/divan.png"
+                                alt="hombre llevando engranaje, en significado al mundo laboral, cuesta arriba"
+                                class="card-img-top " style=" margin:20px; width: 28%;">
+                            <h6 class="card-title">Coaching en Vida Coaches vs. Terapia</h6>
+                            <p>Diferencias y similitudes.</p>
+
+                        </div>
+                        <a onclick="window.modal4.showModal();"
+                            style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px; cursor: pointer;"><b> - Ir al articulo
+                                -</b></a>
+                    </div>
+                    <dialog id="modal4" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
+
+                        <h5 class="card-title">Coaching en Vida Coaches vs. Terapia</h5>
+                        <p>Un coach en Vida Coaches es alguien que asesora y alienta a los usuarios a través de desafíos personales o profesionales. Un coach en Vida Coaches ayuda a guiar a los usuarios para que alcancen sus metas finales. Debido a que cada persona es diferente, también lo son sus metas. Dado que la vida es compleja, las metas también lo son, pueden incluir carrera y trabajo, desarrollo personal, relaciones interpersonales, nutrición, divorcio y relación de pareja, duelo, migración, cambio de cultura e incluso bienestar financiero.
+                        </p>
+                        <p><b>Coach de Vida conecta a los usuarios con coaches que los ayuden a trabajar para acercarse a sus metas de desarrollo personal y profesional. Aquí hay algunos ejemplos de lo que puede hacer un coach para ayudar:</b></p>
+                        
+                        <p><b>- </b>Mejorar la productividad y enfoque. La gestión del tiempo, el manejo del estrés y la priorización. Mejorar el
+                            rendimiento laboral general.</p>
+                        <p><b>- </b> Mejorar la confianza en uno mismo, la compasión propia y la autoestima.</p>
+                        <p><b>- </b> Mejorar las habilidades de colaboración, trabajo en equipo y comunicación, liderazgo y habilidades de gestión.</p>
+                        <p><b>- </b> Mejor equilibrio o armonía entre el trabajo y la vida personal.</p>
+                        <p><b>- </b> Mejor equilibrio entre la salud física y la salud emocional.</p>
+                        <p><b>- </b> Mejor claridad mental, mejora de la aptitud mental.</p>
+                        <p><b>- </b> Mejorar las habilidades de toma de decisiones.</p>
+                        <p><b>- </b> Manejar la fatiga, por el trabajo, por estar al cuidado de alguien más.</p>
+                        <p><b>- </b> Mejorar la resiliencia y la determinación.</p>
+                        <p><b>- </b> Ayudar a las personas a encontrar su propósito, significado y pasiones en la vida.</p>
+                        <p><b>- </b> Gestionar el estrés y construir hábitos saludables para el manejo del estrés.</p>
+                        <p><b>- </b> Navegar el duelo ante pérdidas personales.</p>
+                        <p><b>- </b> Mejorar el sueño y la capacidad de descansar y recuperarse.</p>
+                        <p><b>- </b> Ayudar a encontrar un mejor sentido de pertenencia, navegar la migración y adaptación a un nuevo ambiente y/o
+                            cultura.</p>
+                        <p><b>- </b> Navegar el cambio, la incertidumbre y lo desconocido.</p>
+                        <p><b>- </b> Mejorar el manejo de relaciones románticas, buscar pareja, transitar un divorcio, matrimonio y más.
+                        </p>
+                        <h6>¿Es el coaching en Vida Coaches y la terapia lo mismo?</h6>
+                        <p> En resumen, no. Pero hay algunas similitudes, sobre todo en el objetivo de mejorar el bienestar de las personas. Los terapeutas requieren ciertos requisitos educativos y licenciamiento en el área geográfica donde ejercen para poder brindar tratamiento de atención de salud mental.
+                        </p>
+                        <p><b>Los coaches ayudarán a los usuarios  a construir y utilizar las herramientas adecuadas para alcanzar sus metas, pero no pueden ofrecer atención clínica de salud mental. Al comparar el coaching de vida con la terapia, aquí hay algunas diferencias clave:</b></p>
+                        <p><b>- </b> Los coaches actúan como guías en diversos aspectos de tu vida, principalmente se centran en el crecimiento personal y el desarrollo profesional.
+                        </p>
+                        <p><b>- </b> El coaching puede parecerse a la terapia de conversación, aunque los coaches no son terapeutas certificados y no pueden ejercer como tales.</p>
+                        <p><b>- </b> El coaching se enfoca en alcanzar metas, cambios de comportamiento, cambios de perspectiva y mejora personal en general. Los coaches pueden ayudarte a mejorar tu salud física y bienestar emocional, pero no es un tratamiento de salud mental ni atención clínica.</p>
+                        <p><b>Por otro lado, ayuda definir las características clave de la terapia:</b></p>
+                        <p><b>- </b> Los terapeutas son profesionales de la salud mental capacitados en campos específicos y con curriculas reguladas. Los terapeutas tienen requisitos educativos y de licencia para practicar con los usuarios, usualmente limitados a zonas geográficas particulares (por ejemplo, Estados o países definidos).</p>
+                        <p><b>- </b> Los terapeutas te ayudan a comprender tus patrones psicológicos para cambiar el comportamiento.</p>
+                        <p><b>- </b> Los terapeutas pueden diagnosticar y tratar tus necesidades de salud mental, en especial situaciones agudas como depresión crónica, ansiedad y otras afecciones psicológicas agudas. Pueden mejorar tu salud mental y bienestar emocional a través de diversas técnicas y estilos de terapia, como la TCC, EMDR, y más.</p>
+                        <p><b>- </b> Los terapeutas a menudo trabajan en coordinación con tu equipo de atención médica (por ejemplo, médico de cabecera y/o psiquiatra) para ayudar a mejorar tu bienestar general.</p>
+                        <p><b>- </b> Algunos (aunque no todos) los terapeutas pueden recetar medicamentos para condiciones psicológicas y de salud mental.</p>
+                        <p>Los coaches en Coach de Vida tienen formación en su campo, sea en coaching o salud mental como la psicología en sus países de origen.
+                        </p>
+                        <p>Sea en coaching o terapia, invertir en ti mismo y tu bienestar mental es muy importante. Busca la ayuda que necesitas para sentirte bien y mejorar. <a href="#form"
+                                style="font-size: 1.1rem; color: orangered;font-weight: bolder; border: transparent; text-decoration: none;"
+                                onclick="window.modal4.close();"> Empecemos!</a></p>
+
+                        <a href="#blog" class="btn btn-primary btn-sm rounded"
+                            onclick="window.modal4.close();">Volver</a>
                     </dialog>
                 </div>
             </div>
@@ -708,7 +773,7 @@
                                 src="imgs/facebook.png" alt="link para visitarno en facebook"></a>
                         <a style="padding: 10px;" class="sociales rounded" href="https://www.tiktok.com/@vidacoaches?lang=es"
                             target="_blank"><img src="imgs/tik-tok.png" alt="link para visitarnos en tik tok"></a>
-                        <a style="padding: 10px;" class="sociales rounded" href="https://www.tiktok.com/@vidacoaches?lang=es"
+                        <a style="padding: 10px;" class="sociales rounded" href="https://www.linkedin.com/company/96394808/admin/feed/posts/"
                             target="_blank"><img src="imgs/linkedin (3).png" alt="link para visitarnos en tik tok"></a>
                     </div>
 
