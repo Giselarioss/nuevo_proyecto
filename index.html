@@ -39,6 +39,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="theme-color" content="#478ac9">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!---meta description--->
     <meta name="description"
@@ -280,6 +284,9 @@
         <div class="container">
             <h6 class="section-title text-center mb-0" style="font-size: 1.5rem;">Pero no te preocupes, no estas solo</h6>
             <p class="section-title text-center mb-0" style="font-size: 1rem; padding-bottom: 50px;">Lee algunos testimonios reales…</p>
+            
+            
+            
             <div class="row" data-aos="fade-up">
                 <div class="col-md-4 my-3 my-md-0" style="padding-bottom: 30px;">
                     <div class="card h-100 card_new">
@@ -493,24 +500,11 @@
     <!-- Blog Section -->
     <section class="section" id="blog" style="scroll-margin: 60px;">
         <div class="container">
-            <h6 class="section-title mb-0 text-center" style="padding-bottom: 70px; font-size: 1.5rem;">Blog Vida
+            <h6 class="section-title mb-0 text-center" style="font-size: 1.5rem;">Blog Vida
                 Coaches</h6>
 
             <div class="row text-center" style="justify-content: center; align-items: center">
-                <div class="col-md-4" >
-                    <div class="card border-0 mb-4 h-100"
-                        style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">
-                        <div class="card-body">
-                            <img src="imgs/avion.png" alt="icono de un avion" class="card-img-top "
-                                style=" margin:20px; width: 28%;">
-                            <h6 class="card-title" style="font-size: 1.2rem;">El dolor de migrar</h6>
-                            <p class="mb-0">Los desafíos emocionales</p>
-                            <p>de dejar nuestro hogar</p>
-                        </div>
-                        <a onclick="window.modal1.showModal();"
-                            style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px; cursor: pointer;"><b> - Ir al articulo
-                                -</b></a>
-                    </div>
+                <div class="col-md-4" >                    
                     <dialog id="modal1" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
 
                         <h5 class="card-title">El Dolor de Migrar: los desafíos emocionales de dejar nuestro hogar</h5>
@@ -554,20 +548,7 @@
                     </dialog>
                 </div>
                 <div class="col-md-4">
-                    <div class="card border-0 mb-4 h-100"
-                        style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">
-
-                        <div class="card-body">
-                            <img src="imgs/equilibrio.png"
-                                alt="balanza haciendo equilibrio entre el corazon y las obligaciones"
-                                class="card-img-top" style=" margin:20px; width: 28%;">
-                            <h6 class="card-title">Encontrando el equilibrio con tu pareja.</h5>
-                                <p>Relaciones de parejas con hijos</p>
-                        </div>
-                        <a onclick="window.modal2.showModal();"
-                            style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px; cursor: pointer;"><b> - Ir al articulo
-                                -</b></a>
-                    </div>
+                    
                     <dialog id="modal2" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
 
                         <h5 class="card-title">Encontrando el equilibrio en una relación de pareja con hijos</h5>
@@ -610,20 +591,7 @@
                     </dialog>
                 </div>
                 <div class="col-md-4">
-                    <div class="card border-0 mb-4 h-100"
-                        style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">
-                        <div class="card-body">
-                            <img src="imgs/laboral.png"
-                                alt="hombre llevando engranaje, en significado al mundo laboral, cuesta arriba"
-                                class="card-img-top " style=" margin:20px; width: 28%;">
-                            <h6 class="card-title">¡Cuidado con el Monstruo de la Ansiedad Laboral!</h6>
-                            <p>El mundo laboral y sus obligaciones.</p>
-
-                        </div>
-                        <a onclick="window.modal3.showModal();"
-                            style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px;cursor: pointer;"><b> - Ir al articulo
-                                -</b></a>
-                    </div>
+                   
                     <dialog id="modal3" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
 
                         <h5 class="card-title">¡Cuidado con el Monstruo de la Ansiedad Laboral!</h5>
@@ -671,20 +639,7 @@
                     </dialog>
                 </div>
                 <div class="col-md-4">
-                    <div class="card border-0 mb-4 h-100"
-                        style="box-shadow: 10px 20px 25px 10px rgba(87, 79, 69, 0.226);">
-                        <div class="card-body">
-                            <img src="imgs/divan.png"
-                                alt="hombre llevando engranaje, en significado al mundo laboral, cuesta arriba"
-                                class="card-img-top " style=" margin:20px; width: 28%;">
-                            <h6 class="card-title">Coaching en Vida Coaches vs. Terapia</h6>
-                            <p>Diferencias y similitudes.</p>
-
-                        </div>
-                        <a onclick="window.modal4.showModal();"
-                            style="padding-top: 20px; font-size: 1.1rem; padding-bottom: 20px; cursor: pointer;"><b> - Ir al articulo
-                                -</b></a>
-                    </div>
+                    
                     <dialog id="modal4" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
 
                         <h5 class="card-title">Coaching en Vida Coaches vs. Terapia</h5>
@@ -735,10 +690,246 @@
                             onclick="window.modal4.close();">Volver</a>
                     </dialog>
                 </div>
+                <div class="col-md-4">
+                   
+                    <dialog id="modal5" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
+
+                        <h5 class="card-title">¿Cómo el Coaching de Pareja Puede Fortalecer mi Relación?</h5>
+                        <p>En la vida, las relaciones amorosas ocupan un lugar fundamental. Sin embargo, a veces enfrentamos desafíos que pueden poner a prueba la solidez de la pareja. Especialmente, en la comunidad hispana, donde las tradiciones culturales y las expectativas sociales pueden ser diversas, el coaching de pareja es una herramienta valiosa para fortalecer y enriquecer nuestras relaciones.
+                        </p>
+                        <p>En una sociedad diversa como Estados Unidos, las parejas hispanas a menudo se enfrentan a desafíos únicos. El coaching de pareja brinda a estas parejas las herramientas para navegar por estos desafíos y lograr el éxito a largo plazo. Al invertir en su relación a través del coaching, las parejas hispanas pueden crear bases sólidas.</p>
+                        <h6>¿Qué es el Coaching de Pareja?</h6>
+                        <p>El coaching de pareja es un proceso en el cual una pareja trabaja con un coach profesional para abordar desafíos y mejorar su comunicación y conexión emocional. A través de sesiones colaborativas, el coach brinda herramientas y estrategias para que la pareja pueda superar obstáculos, fortalecer sus lazos y alcanzar sus objetivos en conjunto.</p>
+                        <h6>Comunicación Clara y Efectiva en tu idioma</h6>
+                        <p>Uno de los principales beneficios del coaching de pareja es que ayuda a las parejas a desarrollar habilidades de comunicación clara y efectiva. Si tenemos en cuenta las diferencias entre el español y el inglés como idiomas, estas habilidades son cruciales. El coaching ayuda a identificar patrones de comunicación poco saludables y proporciona técnicas para expresar pensamientos y emociones de manera constructiva.</p>
+                        <h6>Respeto a las Tradiciones Culturales</h6>
+                        <p>Es importante respetar las tradiciones y valores culturales de la comunidad hispana. El coach reconoce que las dinámicas familiares y las expectativas culturales pueden afectar las relaciones de pareja. Al considerar estos aspectos, el coaching trabaja para encontrar soluciones que se alineen con los valores de la pareja mientras promueve el crecimiento personal y relacional.</p>
+                        <h6>Manejo de Conflictos</h6>
+                        <p>Las parejas en cualquier cultura enfrentan conflictos en algún momento. El coaching de pareja proporciona técnicas para manejar estos conflictos de manera saludable. Ayuda a las parejas a comprender los desacuerdos desde diferentes perspectivas y encontrar soluciones mutuamente satisfactorias.</p>
+                        <h6>Fortalecimiento de la Intimidad y la Pasión</h6>
+                        <p>El coaching de pareja también se enfoca en fortalecer la intimidad emocional y física. Donde la conexión y la cercanía son valoradas, estas áreas pueden cobrar especial importancia. El coaching ofrece herramientas para mantener la conexión emocional y reavivar la pasión en la relación.</p>
+                        <p>En resumen, el coaching de pareja ofrece a la comunidad hispana en Estados Unidos una oportunidad valiosa para mejorar y fortalecer sus relaciones. A través de la comunicación efectiva, el respeto a las tradiciones culturales y el manejo de conflictos, el coaching puede empoderar a las parejas para superar desafíos y construir relaciones amorosas y duraderas. Si estás buscando una manera de enriquecer tu relación de pareja, el coaching puede ser el camino hacia un futuro más unido y feliz<a href="#form"
+                                style="font-size: 1.1rem; color: orangered;font-weight: bolder; text-decoration: none;"
+                                onclick="window.modal5.close();"> Empecemos!</a></p>
+
+                        <a href="#blog" class="btn btn-primary btn-sm rounded"
+                            onclick="window.modal5.close();">Volver</a>
+                    </dialog>
+                </div>
+                <div class="col-md-4">
+                   
+                    <dialog id="modal6" class="border-0 mb-4" style="padding: 60px 40px; background-color: white">
+
+                        <h5 class="card-title">¿Cómo Convenzo a mi Espos@ para Llevar Coaching de Pareja?</h5>
+                        <p>Saber que el coaching los va a ayudar es importante, pero no es suficiente si una de las partes no quiere participar. Puede ser porque se sienten atacados, no quieren ver el problema o no creen que exista una solución. Las excusas del tiempo y del dinero van a existir, pero usualmente es algo más.
+                        </p>
+                        <p>Por eso, tienes que saber escuchar y ser creativo en cómo abordar el tema. Aquí hay algunas técnicas que pueden ayudarte a abordar el tema con sensibilidad y persuasión:</p>
+                        <h6>Comunicación Abierta:</h6>
+                        <p>Inicia una conversación abierta y honesta con tu pareja. Explícale por qué crees que el coaching de pareja podría ser beneficioso para ambos. Habla sobre tus propias motivaciones y expectativas de la experiencia. Deja claro como te puede ayudar, no los problemas que quieres resolver.</p>
+                        <h6>Enfócate en el Futuro: </h6>
+                        <p>En lugar de centrarte en los problemas actuales de la relación, enfócate en el futuro deseado. Expresa cómo el coaching podría ayudarles a crecer como pareja y a lograr una relación más sólida y feliz. Evita ejemplos negativos actuales, habla mas de lo que podrían lograr juntos.</p>
+                        <h6>Destaca los Beneficios: </h6>
+                        <p>Resalta los posibles beneficios del coaching de pareja, como mejorar la comunicación, fortalecer la conexión emocional y aprender herramientas para resolver conflictos de manera saludable. Discute metas realistas que involucren mejoras para los dos. Pregúntale a tu pareja, si le gustaría mejorar en algo en particular.</p>
+                        <h6>Escucha Sus Preocupaciones:</h6>
+                        <p>Pregunta a tu pareja si tiene preocupaciones o dudas sobre el coaching. Escucha atentamente sus puntos de vista y trata de comprender sus razones para estar reacio. No trates de responder a cada preocupación, enfócate en lo que tú piensas los va a ayudar.</p>
+                        <h6>Investiga Juntos: </h6>
+                        <p>Investiga juntos sobre lo que implica el coaching de pareja. Explora cómo funcionan las sesiones, los temas que se tratan y los testimonios de otras parejas que han tenido éxito con el coaching. Vida Coaches te puede ayudar en el proceso y contestas las preguntas de ambos.</p>
+                        <h6>Dale su Tiempo: </h6>
+                        <p>proponlo como prueba, de una sesión. Sin presiones, ni compromisos. Dale la oportunidad que experimente directamente los beneficios. Hazlo fácil y sencillo, si tienen poco tiempo, las sesiones virtuales son las más recomendadas. Se conectan desde casa, en el momento en que ambos puedan.</p>
+                        <p>Si todos tus intentos no funcionan, empieza por ti mismo. Un coach te puede ayudar con más técnicas y formas de expresar tus emociones. Eso te ayudara a mejorar y demostrarle a tu pareja los beneficios directamente. <a href="#form"
+                                style="font-size: 1.1rem; color: orangered;font-weight: bolder; text-decoration: none;"
+                                onclick="window.modal6.close();"> Empecemos!</a></p>
+
+                        <a href="#blog" class="btn btn-primary btn-sm rounded"
+                            onclick="window.modal6.close();">Volver</a>
+                    </dialog>
+                </div>
+
             </div>
         </div>
     </section>
-    <!-- End of Blog Section -->
+    
+    <section>
+        <div class="carrousel" style="text-align: center;">
+            <button type="button" class="carrousel__btn carrousel__btn--prev" disabled="true">
+                <i class="bx bxs-chevron-left-circle chevron-circle"></i>
+            </button>
+            <button type="button" class="carrousel__btn carrousel__btn--next">
+                <i class="bx bxs-chevron-right-circle chevron-circle"></i>
+            </button>
+            <div class="grande">
+                <div class="grande__item" >
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/divan.png"
+                            alt="hombre llevando engranaje, en significado al mundo laboral, cuesta arriba"
+                            class="card-img-top " style=" margin:20px; width: 25%;">
+                        <h6 class="card-title mb-0">Coaching en Vida Coaches</h6>
+                        <h6 class="card-title "> vs. Terapia</h6>
+                        <p>Diferencias y similitudes.</p>
+                    </div>
+                    <a onclick="window.modal4.showModal();"
+                        style="padding-top: 10px; font-size: 0.9rem; padding-bottom: 20px; cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+                <div class="grande__item">
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/avion.png" alt="icono de un avion" class="card-img-top "
+                            style=" margin:20px; width: 28%;">
+                        <h6 class="card-title mb-0">El dolor de migrar</h6>
+                        <h6 class="card-title">lejos de tu hogar.</h6>
+                        <p>Los desafíos emocionales.</p>
+    
+                    </div>
+                    <a onclick="window.modal1.showModal();"
+                        style="padding-top: 10px; font-size: 0.9rem; padding-bottom: 20px; cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+                <div class="grande__item">
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/equilibrio.png" alt="balanza haciendo equilibrio entre el corazon y las obligaciones"
+                            class="card-img-top" style=" margin:20px; width: 25%;">
+                        <h6 class="card-title mb-0">Encontrando el equilibrio</h6>
+                        <h6 class="card-title">con tu pareja.</h6>
+                        <p>Relaciones de parejas con hijos</p>
+                    </div>
+                    <a onclick="window.modal2.showModal();"
+                        style="padding-top: 20px; font-size: 0.9rem; padding-bottom: 20px; cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+                <div class="grande__item">
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/laboral.png"
+                            alt="hombre llevando engranaje, en significado al mundo laboral, cuesta arriba"
+                            class="card-img-top " style=" margin:20px; width: 25%;">
+                        <h6 class="card-title mb-0">¡Cuidado con el Monstruo</h6>
+                        <h6 class="card-title">de la Ansiedad Laboral!</h6>
+                        <p>El mundo laboral y sus obligaciones.</p>
+    
+                    </div>
+                    <a onclick="window.modal3.showModal();"
+                        style="padding-top: 20px; font-size: 0.9rem; padding-bottom: 20px;cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+                <div class="grande__item">
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/corazon.png" alt="corazones"
+                            class="card-img-top" style=" margin:20px; width: 25%;">
+                        <h6 class="card-title mb-0">Coaching de Pareja Puede</h6>
+                        <h6 class="card-title">fortalecer tu Relación.</h6>
+                        <p>Comunicación y conexión emocional.</p>
+                    </div>
+                    <a onclick="window.modal5.showModal();"
+                        style="padding-top: 20px; font-size: 0.9rem; padding-bottom: 20px; cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+                <div class="grande__item">
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/pareja.png" alt="pareja hablando"
+                            class="card-img-top" style=" margin:20px; width: 25%;">
+                        <h6 class="card-title mb-0">Convencer a mi espos@ para</h6>
+                        <h6 class="card-title">Coaching de Pareja.</h6>
+                        <p>Abordar con sensibilidad y persuasión</p>
+                    </div>
+                    <a onclick="window.modal6.showModal();"
+                        style="padding-top: 20px; font-size: 0.9rem; padding-bottom: 20px; cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+                <div class="grande__item" >
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/divan.png"
+                            alt="hombre llevando engranaje, en significado al mundo laboral, cuesta arriba"
+                            class="card-img-top " style=" margin:20px; width: 25%;">
+                        <h6 class="card-title mb-0">Coaching en Vida Coaches</h6>
+                        <h6 class="card-title "> vs. Terapia</h6>
+                        <p>Diferencias y similitudes.</p>
+                    </div>
+                    <a onclick="window.modal4.showModal();"
+                        style="padding-top: 10px; font-size: 0.9rem; padding-bottom: 20px; cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+                <div class="grande__item">
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/avion.png" alt="icono de un avion" class="card-img-top "
+                            style=" margin:20px; width: 25%;">
+                        <h6 class="card-title mb-0">El dolor de migrar</h6>
+                        <h6 class="card-title">lejos de tu hogar.</h6>
+                        <p>Los desafíos emocionales.</p>
+    
+                    </div>
+                    <a onclick="window.modal1.showModal();"
+                        style="padding-top: 10px; font-size: 0.9rem; padding-bottom: 20px; cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+                <div class="grande__item">
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/equilibrio.png" alt="balanza haciendo equilibrio entre el corazon y las obligaciones"
+                            class="card-img-top" style=" margin:20px; width: 25%;">
+                        <h6 class="card-title mb-0">Encontrando el equilibrio</h6>
+                        <h6 class="card-title">con tu pareja.</h6>
+                        <p>Relaciones de parejas con hijos</p>
+                    </div>
+                    <a onclick="window.modal2.showModal();"
+                        style="padding-top: 20px; font-size: 0.9rem; padding-bottom: 20px; cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+                <div class="grande__item">
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/laboral.png"
+                            alt="hombre llevando engranaje, en significado al mundo laboral, cuesta arriba"
+                            class="card-img-top " style=" margin:20px; width: 25%;">
+                        <h6 class="card-title mb-0">¡Cuidado con el Monstruo</h6>
+                        <h6 class="card-title">de la Ansiedad Laboral!</h6>
+                        <p>El mundo laboral y sus obligaciones.</p>
+    
+                    </div>
+                    <a onclick="window.modal3.showModal();"
+                        style="padding-top: 20px; font-size: 0.9rem; padding-bottom: 20px;cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+                <div class="grande__item">
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/corazon.png" alt="corazon"
+                            class="card-img-top" style=" margin:20px; width: 25%;">
+                            <h6 class="card-title mb-0">Coaching de Pareja Puede</h6>
+                            <h6 class="card-title">fortalecer tu Relación.</h6>
+                            <p>Comunicación y conexión emocional.</p>
+                    </div>
+                    <a onclick="window.modal5.showModal();"
+                        style="padding-top: 20px; font-size: 0.9rem; padding-bottom: 20px; cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+                <div class="grande__item">
+                    <div class="card-body" style="background-image: url(imgs/agua.png); background-position: center;">
+                        <img src="imgs/pareja.png" alt="pareja hablando"
+                            class="card-img-top" style=" margin:20px; width: 25%;">
+                            <h6 class="card-title mb-0">Convencer a mi espos@ para</h6>
+                            <h6 class="card-title">Coaching de Pareja.</h6>
+                            <p>Abordar con sensibilidad y persuasión</p>
+                    </div>
+                    <a onclick="window.modal6.showModal();"
+                        style="padding-top: 20px; font-size: 0.9rem; padding-bottom: 20px; cursor: pointer;"><b>Ir al
+                            articulo</b></a>
+                </div>
+ 
+                
+            </div>
+            <ul class="puntos" style="padding-bottom: 30px;">
+                <li class="punto active"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+            </ul>
+        </div>
+    </section>
+     <!-- End of Blog Section --> 
 
      <!-- Contact Section -->
     <section id="contact" class="section pb-0"
@@ -783,8 +974,8 @@
             </div>
     
         </div>
-    </section>
-    
+    </section>    
+
     
     <!-- Page Footer -->
     <footer class=" py-4 border-top border-secondary text-center" style="background-color: black; color: white;">
