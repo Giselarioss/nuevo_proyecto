@@ -186,13 +186,14 @@
                     <p style="font-size: 1rem;" >Es rápido y sencillo. Nos cuentas un poco donde necesitas ayuda, te ponemos en contacto con un coach y listo​. </p>
                     <p style="font-size: 1.1rem;" ><b>Las sesiones son en español, de manera virtual y los costos muy asequibles, pueden pagarse con transferencia o tarjeta.​</b></p>
                     <div class="row justify-content-center">
-                        <div class="col-3"><img src="imgs/about.png"
-                            alt="mujer en la comodidad de su casa usando el servicio de vida coach desde su computadora"
+                        <div class="col-3">
+                            <img src="imgs/about.png"
+                            alt="mujer teniendo una sesion virtual de terapia"
                             class="w-100 mt-3 shadow-sm" style="border-radius: 50%;">
                         </div>                    
                         
                         <div class="col-3">
-                            <img src="imgs/about-3.png" alt="foto de una computadora, libreta, celular y lapicera " class="w-100 mt-3 shadow-sm" style="border-radius: 50%;">
+                            <img src="imgs/about-3.png" alt="una pareja recibiendo una sesion de terapia de pareja" class="w-100 mt-3 shadow-sm" style="border-radius: 50%;">
                         </div> 
                     </div>
                        
@@ -209,7 +210,7 @@
 
     <!-- start section servicios-->
     <section id="section" class="section pt-0" style="scroll-margin: 140px; background-color: rgba(128, 128, 128, 0.219);">
-        <div class="container">
+        <div class="container text-center">
             <p  style="padding-top: 60px;font-size: 0.9rem; ">Todos enfrentamos momentos desafiantes: el estrés diario, los efectos de la pandemia y las presiones laborales. Estos desafíos pueden volverse aún más abrumadores cuando nos falta la comunicación en nuestro propio idioma. </p>
             <p  style="padding-bottom: 40px;font-size: 0.9rem; ">Así como cuidamos nuestro cuerpo con una alimentación saludable y visitas al médico o al gimnasio, también es fundamental atender nuestro <b>bienestar mental.</b></p>
             <h6 class="section-title text-center" style="padding-bottom: 60px;font-size: 1.3rem; ">
@@ -279,13 +280,14 @@
         </div>
     </section>
     <!--the end section services-->
+    
     <!-- Start section testimonial-->
     <section class="section" id="testmonial" style="scroll-margin: 60px;">
         <div class="container">
             <h6 class="section-title text-center mb-0" style="font-size: 1.5rem;">Pero no te preocupes, no estas solo</h6>
             <p class="section-title text-center mb-0" style="font-size: 1rem; padding-bottom: 50px;">Lee algunos testimonios reales…</p>
             
-            
+                   
             
             <div class="row" data-aos="fade-up">
                 <div class="col-md-4 my-3 my-md-0" style="padding-bottom: 30px;">
@@ -333,8 +335,10 @@
                             <p class="mb-0"><em>" El año pasado falleció mi papa, éramos muy apegados. Se que está en un lugar mejor después de sufrir de cáncer por varios años. Igual lo extraño mucho y la pena no se va. "</em></p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 my-3 my-md-0">
+                </div>             
+            </div>
+            <div id="verMas" class="row" style="display:none;">
+                <div class="col-md-4 my-3 my-md-0" >
                     <div class="card  h-100 card_new">
                         <div class="card-body card_test">
                             <div class="media align-items-center mb-3">
@@ -352,7 +356,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 my-3 my-md-0">
+                <div class="col-md-4 my-3 my-md-0" >
                     <div class="card h-100 card_new">
                         <div class="card-body card_test">
                             <div class="media align-items-center mb-3">
@@ -382,14 +386,33 @@
                 </div>
             </div>
         </div>
-        <a class=" nav-link btn btn-primary btn-sm rounded container col-md-3 text-center" style="font-size: 1rem; margin-top: 40px; color: white; text-decoration: none;" href="#form">Empecemos</a>
+        
+        <script>
+            function ocultarImagen(){
+                div = document.getElementById('verMas');
+                div.style.display = 'none';
+           }
+           function mostrarImagen(){
+            div = document.getElementById('verMas');
+            div.style.display = '';
+           }           
+       </script>
+    <div class="text-center" style="padding-top: 50px; font-size: 0.9rem;">
+        <input type="button" Value="x" onclick="ocultarImagen()" style="border-radius: 50%; color: white;background-color: #f77a54;border: none;"/>
+        <input style="color: orangered;border: none; background-color: whitesmoke;" type="button" Value="+ Más testimonios"
+            onclick="mostrarImagen()" />
+    </div>
+       
 
+       <a class=" nav-link btn btn-primary btn-sm rounded container col-md-3 text-center" style="font-size: 1rem; margin-top: 40px; color: white; text-decoration: none;" href="#form">Empecemos</a>
     </section>
+    
+    
     <!-- the end section testimonial-->
 
     <!---------------Inicio de tarifas-------------------->
     <section id="tarifas" class="section portfolio-section"
-        style="scroll-margin: 60px; background-color: rgba(225, 220, 245, 0.185);">
+        style="scroll-margin: 100px; background-color: rgba(225, 220, 245, 0.185); border-top: 2px solid rgb(240, 238, 238);">
         <div class="container">
             <h6 class="section-title text-center">Tarifas</h6>
             <p class="text-center" style=" font-size: 1.1rem">Nuestro objetivo es poder ayudar de una manera sencilla y económica. Elige el plan que mejor se te acomode.</p>
@@ -456,7 +479,7 @@
 
     
     <!-- secccion coach -->
-    <section class="container" id="coaches" style="scroll-margin: 60px; padding-top: 120px;">
+    <section class="container" id="coaches" style="scroll-margin: 100px; padding-top: 120px; ">
         <div class="row">
             <div class="text-center" style="padding-bottom: 20px">
                 <h4>¿Quiénes son nuestros coaches?</h4>​
@@ -498,7 +521,7 @@
    
 
     <!-- Blog Section -->
-    <section class="section" id="blog" style="scroll-margin: 60px;">
+    <section class="section" id="blog" style="scroll-margin: 100px; border-top: 2px solid  rgb(236, 235, 235);">
         <div class="container">
             <h6 class="section-title mb-0 text-center" style="font-size: 1.5rem;">Blog Vida
                 Coaches</h6>
