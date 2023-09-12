@@ -177,6 +177,3 @@ document.getElementById('form')
       let operacion = posicionState * -8.34;
       grande.style.transform = `translateX(${ operacion }%)`;
     }
-
-
-    
