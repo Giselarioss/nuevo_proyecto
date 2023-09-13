@@ -73,8 +73,17 @@
 
   gtag('config', 'G-6NQD73KXTW');
 </script>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">   
+    <div class="modal fade section" id="modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog" >
+            <div class="modal-content">                
+                <div class="modal-body portfolio-item">
+                    <img class="img-fluid" src="imgs/promo.png" alt="es una imagen">
+                </div>                
+                    <a href="#" data-dismiss="modal" class="btn btn-danger" style="background-color: orangered;">Cerrar</a>                
+            </div>
+        </div>
+    </div>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZGZDWK"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -1017,9 +1026,6 @@
 
     <!-- LeadMark js -->
     <script src="js/leadmark.js"></script>
-
-    <script src ="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
